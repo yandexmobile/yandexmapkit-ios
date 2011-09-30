@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C940DD2414264F8C004DB73E /* MapLayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C940DD2314264F8C004DB73E /* MapLayersViewController.m */; };
+		C940DD2614265AFF004DB73E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C940DD2514265AFF004DB73E /* Default.png */; };
+		C940DD2814265B02004DB73E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C940DD2714265B02004DB73E /* Default@2x.png */; };
+		C96EECA61423899B00F3D0CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECA51423899B00F3D0CF /* UIKit.framework */; };
+		C96EECA81423899B00F3D0CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECA71423899B00F3D0CF /* Foundation.framework */; };
+		C96EECAA1423899B00F3D0CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECA91423899B00F3D0CF /* CoreGraphics.framework */; };
+		C96EECB01423899B00F3D0CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C96EECAE1423899B00F3D0CF /* InfoPlist.strings */; };
+		C96EECB21423899B00F3D0CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C96EECB11423899B00F3D0CF /* main.m */; };
+		C96EECB61423899B00F3D0CF /* YandexMapKitSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C96EECB51423899B00F3D0CF /* YandexMapKitSampleAppDelegate.m */; };
+		C96EECB91423899B00F3D0CF /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C96EECB71423899B00F3D0CF /* MainWindow.xib */; };
+		C96EECD114238DB300F3D0CF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECD014238DB300F3D0CF /* OpenGLES.framework */; };
+		C96EECD314238DBA00F3D0CF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECD214238DBA00F3D0CF /* Security.framework */; };
+		C96EECD514238DC500F3D0CF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECD414238DC500F3D0CF /* CoreData.framework */; };
+		C96EECD714238DCE00F3D0CF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECD614238DCE00F3D0CF /* AVFoundation.framework */; };
+		C96EECD914238DD700F3D0CF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECD814238DD700F3D0CF /* QuartzCore.framework */; };
+		C96EECDB14238DDF00F3D0CF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECDA14238DDF00F3D0CF /* SystemConfiguration.framework */; };
+		C96EECDD14238DE700F3D0CF /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECDC14238DE700F3D0CF /* MessageUI.framework */; };
+		C96EECDF14238DF700F3D0CF /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECDE14238DF700F3D0CF /* libstdc++.dylib */; };
+		C96EECE114238E0000F3D0CF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECE014238E0000F3D0CF /* libz.dylib */; };
+		C96EECE314238E0900F3D0CF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECE214238E0900F3D0CF /* libsqlite3.dylib */; };
+		C96EECE514238E3100F3D0CF /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECE414238E3100F3D0CF /* libxml2.dylib */; };
+		C96EECE714238E6800F3D0CF /* libYandexMapKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECE614238E6800F3D0CF /* libYandexMapKit.a */; };
+		C96EECE91423958B00F3D0CF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECE81423958B00F3D0CF /* CoreLocation.framework */; };
+		C99C783F1423E41500380582 /* YandexMapKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C99C783E1423E41500380582 /* YandexMapKit.bundle */; };
+		C99C78621426193F00380582 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C99C78601426193F00380582 /* MapViewController.m */; };
+		C99C78631426193F00380582 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C99C78611426193F00380582 /* MapViewController.xib */; };
+		C9D7219F14261C1B00711704 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D7219D14261C1B00711704 /* RootViewController.m */; };
+		C9D721A014261C1B00711704 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9D7219E14261C1B00711704 /* RootViewController.xib */; };
+		C9D721A214261DB500711704 /* SamplesList.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9D721A114261DB500711704 /* SamplesList.plist */; };
+		C9D721A614261E8A00711704 /* Sample.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D721A514261E8A00711704 /* Sample.m */; };
+		C9D721AB142623EE00711704 /* AnnotationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D721AA142623EE00711704 /* AnnotationsViewController.m */; };
+		C9D721AE142627BA00711704 /* PointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D721AD142627BA00711704 /* PointAnnotation.m */; };
+		C9D721B314262EE600711704 /* AnnotationDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D721B114262EE600711704 /* AnnotationDetailViewController.m */; };
+		C9D721B414262EE600711704 /* AnnotationDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9D721B214262EE600711704 /* AnnotationDetailViewController.xib */; };
+		C9D721B81426351B00711704 /* CustomCalloutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D721B71426351B00711704 /* CustomCalloutViewController.m */; };
+		C9D721C01426363900711704 /* CalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D721BE1426363900711704 /* CalloutView.m */; };
+		C9D721C11426363900711704 /* CalloutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9D721BF1426363900711704 /* CalloutView.xib */; };
+		C9D721C514263F3000711704 /* CustomAnnotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D721C414263F3000711704 /* CustomAnnotationViewController.m */; };
+		C9D721C91426401200711704 /* yandex.png in Resources */ = {isa = PBXBuildFile; fileRef = C9D721C81426401200711704 /* yandex.png */; };
+		C9D721CD1426423A00711704 /* DraggableAnnotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D721CC1426423A00711704 /* DraggableAnnotationViewController.m */; };
+		C9D721D11426469900711704 /* TrafficViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D721D01426469900711704 /* TrafficViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C940DD2214264F8C004DB73E /* MapLayersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapLayersViewController.h; sourceTree = "<group>"; };
+		C940DD2314264F8C004DB73E /* MapLayersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapLayersViewController.m; sourceTree = "<group>"; };
+		C940DD2514265AFF004DB73E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		C940DD2714265B02004DB73E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		C96EECA11423899B00F3D0CF /* YandexMapKitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YandexMapKitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C96EECA51423899B00F3D0CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C96EECA71423899B00F3D0CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C96EECA91423899B00F3D0CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C96EECAD1423899B00F3D0CF /* YandexMapKitSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YandexMapKitSample-Info.plist"; sourceTree = "<group>"; };
+		C96EECAF1423899B00F3D0CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C96EECB11423899B00F3D0CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C96EECB31423899B00F3D0CF /* YandexMapKitSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YandexMapKitSample-Prefix.pch"; sourceTree = "<group>"; };
+		C96EECB41423899B00F3D0CF /* YandexMapKitSampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YandexMapKitSampleAppDelegate.h; sourceTree = "<group>"; };
+		C96EECB51423899B00F3D0CF /* YandexMapKitSampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YandexMapKitSampleAppDelegate.m; sourceTree = "<group>"; };
+		C96EECB81423899B00F3D0CF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		C96EECC914238C5800F3D0CF /* YandexMapKit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = YandexMapKit; sourceTree = "<group>"; };
+		C96EECD014238DB300F3D0CF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		C96EECD214238DBA00F3D0CF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C96EECD414238DC500F3D0CF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C96EECD614238DCE00F3D0CF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C96EECD814238DD700F3D0CF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C96EECDA14238DDF00F3D0CF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C96EECDC14238DE700F3D0CF /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		C96EECDE14238DF700F3D0CF /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/gcc/arm-apple-darwin10/4.0.1/libstdc++.dylib"; sourceTree = SDKROOT; };
+		C96EECE014238E0000F3D0CF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		C96EECE214238E0900F3D0CF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		C96EECE414238E3100F3D0CF /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		C96EECE614238E6800F3D0CF /* libYandexMapKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYandexMapKit.a; path = YandexMapKit/libYandexMapKit.a; sourceTree = "<group>"; };
+		C96EECE81423958B00F3D0CF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C99C783E1423E41500380582 /* YandexMapKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = YandexMapKit.bundle; path = ../YandexMapKit/YandexMapKit.bundle; sourceTree = "<group>"; };
+		C99C785F1426193F00380582 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		C99C78601426193F00380582 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		C99C78611426193F00380582 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		C9D7219C14261C1B00711704 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		C9D7219D14261C1B00711704 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		C9D7219E14261C1B00711704 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		C9D721A114261DB500711704 /* SamplesList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SamplesList.plist; sourceTree = "<group>"; };
+		C9D721A414261E8A00711704 /* Sample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sample.h; sourceTree = "<group>"; };
+		C9D721A514261E8A00711704 /* Sample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sample.m; sourceTree = "<group>"; };
+		C9D721A9142623EE00711704 /* AnnotationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationsViewController.h; sourceTree = "<group>"; };
+		C9D721AA142623EE00711704 /* AnnotationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotationsViewController.m; sourceTree = "<group>"; };
+		C9D721AC142627BA00711704 /* PointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointAnnotation.h; sourceTree = "<group>"; };
+		C9D721AD142627BA00711704 /* PointAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointAnnotation.m; sourceTree = "<group>"; };
+		C9D721B014262EE600711704 /* AnnotationDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationDetailViewController.h; sourceTree = "<group>"; };
+		C9D721B114262EE600711704 /* AnnotationDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotationDetailViewController.m; sourceTree = "<group>"; };
+		C9D721B214262EE600711704 /* AnnotationDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnnotationDetailViewController.xib; sourceTree = "<group>"; };
+		C9D721B61426351B00711704 /* CustomCalloutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCalloutViewController.h; sourceTree = "<group>"; };
+		C9D721B71426351B00711704 /* CustomCalloutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCalloutViewController.m; sourceTree = "<group>"; };
+		C9D721BD1426363900711704 /* CalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalloutView.h; sourceTree = "<group>"; };
+		C9D721BE1426363900711704 /* CalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalloutView.m; sourceTree = "<group>"; };
+		C9D721BF1426363900711704 /* CalloutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalloutView.xib; sourceTree = "<group>"; };
+		C9D721C314263F3000711704 /* CustomAnnotationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotationViewController.h; sourceTree = "<group>"; };
+		C9D721C414263F3000711704 /* CustomAnnotationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotationViewController.m; sourceTree = "<group>"; };
+		C9D721C81426401200711704 /* yandex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yandex.png; sourceTree = "<group>"; };
+		C9D721CB1426423A00711704 /* DraggableAnnotationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableAnnotationViewController.h; sourceTree = "<group>"; };
+		C9D721CC1426423A00711704 /* DraggableAnnotationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableAnnotationViewController.m; sourceTree = "<group>"; };
+		C9D721CF1426469900711704 /* TrafficViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrafficViewController.h; sourceTree = "<group>"; };
+		C9D721D01426469900711704 /* TrafficViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrafficViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C96EEC9E1423899B00F3D0CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96EECE91423958B00F3D0CF /* CoreLocation.framework in Frameworks */,
+				C96EECE714238E6800F3D0CF /* libYandexMapKit.a in Frameworks */,
+				C96EECE514238E3100F3D0CF /* libxml2.dylib in Frameworks */,
+				C96EECE314238E0900F3D0CF /* libsqlite3.dylib in Frameworks */,
+				C96EECE114238E0000F3D0CF /* libz.dylib in Frameworks */,
+				C96EECDF14238DF700F3D0CF /* libstdc++.dylib in Frameworks */,
+				C96EECDD14238DE700F3D0CF /* MessageUI.framework in Frameworks */,
+				C96EECDB14238DDF00F3D0CF /* SystemConfiguration.framework in Frameworks */,
+				C96EECD914238DD700F3D0CF /* QuartzCore.framework in Frameworks */,
+				C96EECD714238DCE00F3D0CF /* AVFoundation.framework in Frameworks */,
+				C96EECD514238DC500F3D0CF /* CoreData.framework in Frameworks */,
+				C96EECD314238DBA00F3D0CF /* Security.framework in Frameworks */,
+				C96EECD114238DB300F3D0CF /* OpenGLES.framework in Frameworks */,
+				C96EECA61423899B00F3D0CF /* UIKit.framework in Frameworks */,
+				C96EECA81423899B00F3D0CF /* Foundation.framework in Frameworks */,
+				C96EECAA1423899B00F3D0CF /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C940DD2014264EAB004DB73E /* Map Layers View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C940DD2214264F8C004DB73E /* MapLayersViewController.h */,
+				C940DD2314264F8C004DB73E /* MapLayersViewController.m */,
+			);
+			name = "Map Layers View Controller";
+			sourceTree = "<group>";
+		};
+		C96EEC961423899A00F3D0CF = {
+			isa = PBXGroup;
+			children = (
+				C96EECC914238C5800F3D0CF /* YandexMapKit */,
+				C96EECAB1423899B00F3D0CF /* YandexMapKitSample */,
+				C96EECA41423899B00F3D0CF /* Frameworks */,
+				C96EECA21423899B00F3D0CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C96EECA21423899B00F3D0CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C96EECA11423899B00F3D0CF /* YandexMapKitSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C96EECA41423899B00F3D0CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C96EECE81423958B00F3D0CF /* CoreLocation.framework */,
+				C96EECE614238E6800F3D0CF /* libYandexMapKit.a */,
+				C96EECE414238E3100F3D0CF /* libxml2.dylib */,
+				C96EECE214238E0900F3D0CF /* libsqlite3.dylib */,
+				C96EECE014238E0000F3D0CF /* libz.dylib */,
+				C96EECDE14238DF700F3D0CF /* libstdc++.dylib */,
+				C96EECDC14238DE700F3D0CF /* MessageUI.framework */,
+				C96EECDA14238DDF00F3D0CF /* SystemConfiguration.framework */,
+				C96EECD814238DD700F3D0CF /* QuartzCore.framework */,
+				C96EECD614238DCE00F3D0CF /* AVFoundation.framework */,
+				C96EECD414238DC500F3D0CF /* CoreData.framework */,
+				C96EECD214238DBA00F3D0CF /* Security.framework */,
+				C96EECD014238DB300F3D0CF /* OpenGLES.framework */,
+				C96EECA51423899B00F3D0CF /* UIKit.framework */,
+				C96EECA71423899B00F3D0CF /* Foundation.framework */,
+				C96EECA91423899B00F3D0CF /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C96EECAB1423899B00F3D0CF /* YandexMapKitSample */ = {
+			isa = PBXGroup;
+			children = (
+				C96EECB41423899B00F3D0CF /* YandexMapKitSampleAppDelegate.h */,
+				C96EECB51423899B00F3D0CF /* YandexMapKitSampleAppDelegate.m */,
+				C96EECB71423899B00F3D0CF /* MainWindow.xib */,
+				C99C785E1426192400380582 /* Map View Controller */,
+				C9D7219B14261BEE00711704 /* Root View Controller */,
+				C9D721A7142623AE00711704 /* Yandex MapKit Samples */,
+				C96EECAC1423899B00F3D0CF /* Supporting Files */,
+			);
+			path = YandexMapKitSample;
+			sourceTree = "<group>";
+		};
+		C96EECAC1423899B00F3D0CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C940DD2714265B02004DB73E /* Default@2x.png */,
+				C940DD2514265AFF004DB73E /* Default.png */,
+				C99C783E1423E41500380582 /* YandexMapKit.bundle */,
+				C96EECAD1423899B00F3D0CF /* YandexMapKitSample-Info.plist */,
+				C96EECAE1423899B00F3D0CF /* InfoPlist.strings */,
+				C96EECB11423899B00F3D0CF /* main.m */,
+				C96EECB31423899B00F3D0CF /* YandexMapKitSample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C99C785E1426192400380582 /* Map View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C9D721AF1426284400711704 /* Map Point Annotation Model */,
+				C99C785F1426193F00380582 /* MapViewController.h */,
+				C99C78601426193F00380582 /* MapViewController.m */,
+				C99C78611426193F00380582 /* MapViewController.xib */,
+			);
+			name = "Map View Controller";
+			sourceTree = "<group>";
+		};
+		C9D7219B14261BEE00711704 /* Root View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C9D721A314261E6A00711704 /* Sample Model */,
+				C9D7219C14261C1B00711704 /* RootViewController.h */,
+				C9D7219D14261C1B00711704 /* RootViewController.m */,
+				C9D7219E14261C1B00711704 /* RootViewController.xib */,
+				C9D721A114261DB500711704 /* SamplesList.plist */,
+			);
+			name = "Root View Controller";
+			sourceTree = "<group>";
+		};
+		C9D721A314261E6A00711704 /* Sample Model */ = {
+			isa = PBXGroup;
+			children = (
+				C9D721A414261E8A00711704 /* Sample.h */,
+				C9D721A514261E8A00711704 /* Sample.m */,
+			);
+			name = "Sample Model";
+			sourceTree = "<group>";
+		};
+		C9D721A7142623AE00711704 /* Yandex MapKit Samples */ = {
+			isa = PBXGroup;
+			children = (
+				C9D721A8142623D300711704 /* AnnotationsViewController */,
+				C9D721B5142634D700711704 /* Custom Callout View Controller */,
+				C9D721C214263F0E00711704 /* Custom Annotation View Controller */,
+				C9D721CA1426421500711704 /* Draggable Annotation View Controller */,
+				C9D721CE1426467600711704 /* Traffic View Controller */,
+				C940DD2014264EAB004DB73E /* Map Layers View Controller */,
+			);
+			name = "Yandex MapKit Samples";
+			sourceTree = "<group>";
+		};
+		C9D721A8142623D300711704 /* AnnotationsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C9D721A9142623EE00711704 /* AnnotationsViewController.h */,
+				C9D721AA142623EE00711704 /* AnnotationsViewController.m */,
+				C9D721B014262EE600711704 /* AnnotationDetailViewController.h */,
+				C9D721B114262EE600711704 /* AnnotationDetailViewController.m */,
+				C9D721B214262EE600711704 /* AnnotationDetailViewController.xib */,
+			);
+			name = AnnotationsViewController;
+			sourceTree = "<group>";
+		};
+		C9D721AF1426284400711704 /* Map Point Annotation Model */ = {
+			isa = PBXGroup;
+			children = (
+				C9D721AC142627BA00711704 /* PointAnnotation.h */,
+				C9D721AD142627BA00711704 /* PointAnnotation.m */,
+			);
+			name = "Map Point Annotation Model";
+			sourceTree = "<group>";
+		};
+		C9D721B5142634D700711704 /* Custom Callout View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C9D721B61426351B00711704 /* CustomCalloutViewController.h */,
+				C9D721B71426351B00711704 /* CustomCalloutViewController.m */,
+				C9D721BD1426363900711704 /* CalloutView.h */,
+				C9D721BE1426363900711704 /* CalloutView.m */,
+				C9D721BF1426363900711704 /* CalloutView.xib */,
+			);
+			name = "Custom Callout View Controller";
+			sourceTree = "<group>";
+		};
+		C9D721C214263F0E00711704 /* Custom Annotation View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C9D721C314263F3000711704 /* CustomAnnotationViewController.h */,
+				C9D721C414263F3000711704 /* CustomAnnotationViewController.m */,
+				C9D721C81426401200711704 /* yandex.png */,
+			);
+			name = "Custom Annotation View Controller";
+			sourceTree = "<group>";
+		};
+		C9D721CA1426421500711704 /* Draggable Annotation View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C9D721CB1426423A00711704 /* DraggableAnnotationViewController.h */,
+				C9D721CC1426423A00711704 /* DraggableAnnotationViewController.m */,
+			);
+			name = "Draggable Annotation View Controller";
+			sourceTree = "<group>";
+		};
+		C9D721CE1426467600711704 /* Traffic View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C9D721CF1426469900711704 /* TrafficViewController.h */,
+				C9D721D01426469900711704 /* TrafficViewController.m */,
+			);
+			name = "Traffic View Controller";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C96EECA01423899B00F3D0CF /* YandexMapKitSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C96EECC21423899B00F3D0CF /* Build configuration list for PBXNativeTarget "YandexMapKitSample" */;
+			buildPhases = (
+				C96EEC9D1423899B00F3D0CF /* Sources */,
+				C96EEC9E1423899B00F3D0CF /* Frameworks */,
+				C96EEC9F1423899B00F3D0CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YandexMapKitSample;
+			productName = YandexMapKitSample;
+			productReference = C96EECA11423899B00F3D0CF /* YandexMapKitSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C96EEC981423899B00F3D0CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Яндекс";
+			};
+			buildConfigurationList = C96EEC9B1423899B00F3D0CF /* Build configuration list for PBXProject "YandexMapKitSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C96EEC961423899A00F3D0CF;
+			productRefGroup = C96EECA21423899B00F3D0CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C96EECA01423899B00F3D0CF /* YandexMapKitSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C96EEC9F1423899B00F3D0CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96EECB01423899B00F3D0CF /* InfoPlist.strings in Resources */,
+				C96EECB91423899B00F3D0CF /* MainWindow.xib in Resources */,
+				C99C783F1423E41500380582 /* YandexMapKit.bundle in Resources */,
+				C99C78631426193F00380582 /* MapViewController.xib in Resources */,
+				C9D721A014261C1B00711704 /* RootViewController.xib in Resources */,
+				C9D721A214261DB500711704 /* SamplesList.plist in Resources */,
+				C9D721B414262EE600711704 /* AnnotationDetailViewController.xib in Resources */,
+				C9D721C11426363900711704 /* CalloutView.xib in Resources */,
+				C9D721C91426401200711704 /* yandex.png in Resources */,
+				C940DD2614265AFF004DB73E /* Default.png in Resources */,
+				C940DD2814265B02004DB73E /* Default@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C96EEC9D1423899B00F3D0CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96EECB21423899B00F3D0CF /* main.m in Sources */,
+				C96EECB61423899B00F3D0CF /* YandexMapKitSampleAppDelegate.m in Sources */,
+				C99C78621426193F00380582 /* MapViewController.m in Sources */,
+				C9D7219F14261C1B00711704 /* RootViewController.m in Sources */,
+				C9D721A614261E8A00711704 /* Sample.m in Sources */,
+				C9D721AB142623EE00711704 /* AnnotationsViewController.m in Sources */,
+				C9D721AE142627BA00711704 /* PointAnnotation.m in Sources */,
+				C9D721B314262EE600711704 /* AnnotationDetailViewController.m in Sources */,
+				C9D721B81426351B00711704 /* CustomCalloutViewController.m in Sources */,
+				C9D721C01426363900711704 /* CalloutView.m in Sources */,
+				C9D721C514263F3000711704 /* CustomAnnotationViewController.m in Sources */,
+				C9D721CD1426423A00711704 /* DraggableAnnotationViewController.m in Sources */,
+				C9D721D11426469900711704 /* TrafficViewController.m in Sources */,
+				C940DD2414264F8C004DB73E /* MapLayersViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C96EECAE1423899B00F3D0CF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C96EECAF1423899B00F3D0CF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C96EECB71423899B00F3D0CF /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C96EECB81423899B00F3D0CF /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C96A65C5142669AE00E23D26 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/YandexMapKit/Headers";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-all_load";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AdHoc;
+		};
+		C96A65C6142669AE00E23D26 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YandexMapKitSample/YandexMapKitSample-Prefix.pch";
+				INFOPLIST_FILE = "YandexMapKitSample/YandexMapKitSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/YandexMapKit\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = AdHoc;
+		};
+		C96EECC01423899B00F3D0CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/YandexMapKit/Headers";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = "-all_load";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C96EECC11423899B00F3D0CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/YandexMapKit/Headers";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-all_load";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C96EECC31423899B00F3D0CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YandexMapKitSample/YandexMapKitSample-Prefix.pch";
+				INFOPLIST_FILE = "YandexMapKitSample/YandexMapKitSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/YandexMapKit\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C96EECC41423899B00F3D0CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YandexMapKitSample/YandexMapKitSample-Prefix.pch";
+				INFOPLIST_FILE = "YandexMapKitSample/YandexMapKitSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/YandexMapKit\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C96EEC9B1423899B00F3D0CF /* Build configuration list for PBXProject "YandexMapKitSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C96EECC01423899B00F3D0CF /* Debug */,
+				C96EECC11423899B00F3D0CF /* Release */,
+				C96A65C5142669AE00E23D26 /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C96EECC21423899B00F3D0CF /* Build configuration list for PBXNativeTarget "YandexMapKitSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C96EECC31423899B00F3D0CF /* Debug */,
+				C96EECC41423899B00F3D0CF /* Release */,
+				C96A65C6142669AE00E23D26 /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C96EEC981423899B00F3D0CF /* Project object */;
+}
