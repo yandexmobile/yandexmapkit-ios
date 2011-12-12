@@ -52,6 +52,14 @@
 			<key>ViewControllerClass</key>
 			<string>MapLayersViewController</string>
 		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Экранные кнопки</string>
+			<key>Subtitle</key>
+			<string>Показ кнопок зуммирования и найти меня</string>
+			<key>ViewControllerClass</key>
+			<string>OnScreenButtonsViewController</string>
+		</dict>
 	</array>
 </dict>
 </plist>

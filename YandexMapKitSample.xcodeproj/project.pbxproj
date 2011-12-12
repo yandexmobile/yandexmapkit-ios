@@ -30,9 +30,19 @@
 		C96EECE514238E3100F3D0CF /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECE414238E3100F3D0CF /* libxml2.dylib */; };
 		C96EECE714238E6800F3D0CF /* libYandexMapKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECE614238E6800F3D0CF /* libYandexMapKit.a */; };
 		C96EECE91423958B00F3D0CF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECE81423958B00F3D0CF /* CoreLocation.framework */; };
+		C994B9FF1496ACD400980A9E /* OnScreenButtonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C994B9FD1496ACD400980A9E /* OnScreenButtonsViewController.m */; };
+		C994BA001496ACD400980A9E /* OnScreenButtonsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C994B9FE1496ACD400980A9E /* OnScreenButtonsViewController.xib */; };
 		C99C783F1423E41500380582 /* YandexMapKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C99C783E1423E41500380582 /* YandexMapKit.bundle */; };
 		C99C78621426193F00380582 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C99C78601426193F00380582 /* MapViewController.m */; };
 		C99C78631426193F00380582 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C99C78611426193F00380582 /* MapViewController.xib */; };
+		C9B49A5A1496AE570090387C /* ZoomMinus.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B49A521496AE570090387C /* ZoomMinus.png */; };
+		C9B49A5B1496AE570090387C /* ZoomMinus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B49A531496AE570090387C /* ZoomMinus@2x.png */; };
+		C9B49A5C1496AE570090387C /* ZoomMinusHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B49A541496AE570090387C /* ZoomMinusHighlighted.png */; };
+		C9B49A5D1496AE570090387C /* ZoomMinusHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B49A551496AE570090387C /* ZoomMinusHighlighted@2x.png */; };
+		C9B49A5E1496AE570090387C /* ZoomPlus.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B49A561496AE570090387C /* ZoomPlus.png */; };
+		C9B49A5F1496AE570090387C /* ZoomPlus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B49A571496AE570090387C /* ZoomPlus@2x.png */; };
+		C9B49A601496AE570090387C /* ZoomPlusHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B49A581496AE570090387C /* ZoomPlusHighlighted.png */; };
+		C9B49A611496AE570090387C /* ZoomPlusHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B49A591496AE570090387C /* ZoomPlusHighlighted@2x.png */; };
 		C9D7219F14261C1B00711704 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D7219D14261C1B00711704 /* RootViewController.m */; };
 		C9D721A014261C1B00711704 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9D7219E14261C1B00711704 /* RootViewController.xib */; };
 		C9D721A214261DB500711704 /* SamplesList.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9D721A114261DB500711704 /* SamplesList.plist */; };
@@ -80,10 +90,21 @@
 		C96EECE414238E3100F3D0CF /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		C96EECE614238E6800F3D0CF /* libYandexMapKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYandexMapKit.a; path = YandexMapKit/libYandexMapKit.a; sourceTree = "<group>"; };
 		C96EECE81423958B00F3D0CF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C994B9FC1496ACD400980A9E /* OnScreenButtonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnScreenButtonsViewController.h; sourceTree = "<group>"; };
+		C994B9FD1496ACD400980A9E /* OnScreenButtonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnScreenButtonsViewController.m; sourceTree = "<group>"; };
+		C994B9FE1496ACD400980A9E /* OnScreenButtonsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnScreenButtonsViewController.xib; sourceTree = "<group>"; };
 		C99C783E1423E41500380582 /* YandexMapKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = YandexMapKit.bundle; path = ../YandexMapKit/YandexMapKit.bundle; sourceTree = "<group>"; };
 		C99C785F1426193F00380582 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		C99C78601426193F00380582 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		C99C78611426193F00380582 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		C9B49A521496AE570090387C /* ZoomMinus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZoomMinus.png; sourceTree = "<group>"; };
+		C9B49A531496AE570090387C /* ZoomMinus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ZoomMinus@2x.png"; sourceTree = "<group>"; };
+		C9B49A541496AE570090387C /* ZoomMinusHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZoomMinusHighlighted.png; sourceTree = "<group>"; };
+		C9B49A551496AE570090387C /* ZoomMinusHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ZoomMinusHighlighted@2x.png"; sourceTree = "<group>"; };
+		C9B49A561496AE570090387C /* ZoomPlus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZoomPlus.png; sourceTree = "<group>"; };
+		C9B49A571496AE570090387C /* ZoomPlus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ZoomPlus@2x.png"; sourceTree = "<group>"; };
+		C9B49A581496AE570090387C /* ZoomPlusHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZoomPlusHighlighted.png; sourceTree = "<group>"; };
+		C9B49A591496AE570090387C /* ZoomPlusHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ZoomPlusHighlighted@2x.png"; sourceTree = "<group>"; };
 		C9D7219C14261C1B00711704 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		C9D7219D14261C1B00711704 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		C9D7219E14261C1B00711704 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
@@ -216,6 +237,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C994B9F71496ABD600980A9E /* On-Screen Buttons View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C9B49A521496AE570090387C /* ZoomMinus.png */,
+				C9B49A531496AE570090387C /* ZoomMinus@2x.png */,
+				C9B49A541496AE570090387C /* ZoomMinusHighlighted.png */,
+				C9B49A551496AE570090387C /* ZoomMinusHighlighted@2x.png */,
+				C9B49A561496AE570090387C /* ZoomPlus.png */,
+				C9B49A571496AE570090387C /* ZoomPlus@2x.png */,
+				C9B49A581496AE570090387C /* ZoomPlusHighlighted.png */,
+				C9B49A591496AE570090387C /* ZoomPlusHighlighted@2x.png */,
+				C994B9FC1496ACD400980A9E /* OnScreenButtonsViewController.h */,
+				C994B9FD1496ACD400980A9E /* OnScreenButtonsViewController.m */,
+				C994B9FE1496ACD400980A9E /* OnScreenButtonsViewController.xib */,
+			);
+			name = "On-Screen Buttons View Controller";
+			sourceTree = "<group>";
+		};
 		C99C785E1426192400380582 /* Map View Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +296,7 @@
 				C9D721CA1426421500711704 /* Draggable Annotation View Controller */,
 				C9D721CE1426467600711704 /* Traffic View Controller */,
 				C940DD2014264EAB004DB73E /* Map Layers View Controller */,
+				C994B9F71496ABD600980A9E /* On-Screen Buttons View Controller */,
 			);
 			name = "Yandex MapKit Samples";
 			sourceTree = "<group>";
@@ -383,6 +423,15 @@
 				C9D721C91426401200711704 /* yandex.png in Resources */,
 				C940DD2614265AFF004DB73E /* Default.png in Resources */,
 				C940DD2814265B02004DB73E /* Default@2x.png in Resources */,
+				C994BA001496ACD400980A9E /* OnScreenButtonsViewController.xib in Resources */,
+				C9B49A5A1496AE570090387C /* ZoomMinus.png in Resources */,
+				C9B49A5B1496AE570090387C /* ZoomMinus@2x.png in Resources */,
+				C9B49A5C1496AE570090387C /* ZoomMinusHighlighted.png in Resources */,
+				C9B49A5D1496AE570090387C /* ZoomMinusHighlighted@2x.png in Resources */,
+				C9B49A5E1496AE570090387C /* ZoomPlus.png in Resources */,
+				C9B49A5F1496AE570090387C /* ZoomPlus@2x.png in Resources */,
+				C9B49A601496AE570090387C /* ZoomPlusHighlighted.png in Resources */,
+				C9B49A611496AE570090387C /* ZoomPlusHighlighted@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +456,7 @@
 				C9D721CD1426423A00711704 /* DraggableAnnotationViewController.m in Sources */,
 				C9D721D11426469900711704 /* TrafficViewController.m in Sources */,
 				C940DD2414264F8C004DB73E /* MapLayersViewController.m in Sources */,
+				C994B9FF1496ACD400980A9E /* OnScreenButtonsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

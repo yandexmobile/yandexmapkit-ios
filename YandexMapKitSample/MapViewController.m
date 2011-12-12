@@ -20,7 +20,7 @@
 #pragma mark - View lifecycle
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:@"MapViewController" bundle:nibBundleOrNil];
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         
     }
@@ -43,7 +43,6 @@
 - (void)configureAndInstallMapView {
     // Replace with your own Yandex Map Kit API key
     self.mapView.apiKey = nil;
-    [self.view addSubview:self.mapView];
 }
 
 #pragma mark - Properties

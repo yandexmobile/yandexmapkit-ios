@@ -50,7 +50,6 @@
 
 - (void)configureMapView {
     self.mapView.showsUserLocation = NO;
-    self.mapView.zoomButtons.hidden = YES;
     self.mapView.showTraffic = NO;
     [self.mapView setCenterCoordinate:YMKMapCoordinateMake(55.753699, 37.619001)
                           atZoomLevel:11
