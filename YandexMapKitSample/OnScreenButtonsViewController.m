@@ -24,6 +24,10 @@
 
 #pragma mark - View lifecycle
 
+- (NSString *)nibName {
+    return @"OnScreenButtonsViewController";
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
