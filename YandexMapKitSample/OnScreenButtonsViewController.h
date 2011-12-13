@@ -7,10 +7,16 @@
 //
 
 #import "MapViewController.h"
+#import "LocationFetcher.h"
 
 @interface OnScreenButtonsViewController : MapViewController
 
 - (IBAction)zoomPlusButtonTapped:(id)sender;
 - (IBAction)zoomMinusButtonTapped:(id)sender;
+- (IBAction)locateMeButtonTapped:(id)sender;
+
+@property (nonatomic, retain) IBOutlet LocationFetcher *locationFetcher;
+@property (nonatomic, retain) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (nonatomic, retain) IBOutlet UIButton *locateMeButton;
 
 @end

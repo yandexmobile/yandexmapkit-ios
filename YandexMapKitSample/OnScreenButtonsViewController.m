@@ -8,36 +8,27 @@
 
 #import "OnScreenButtonsViewController.h"
 
-@implementation OnScreenButtonsViewController
+@interface OnScreenButtonsViewController ()
 
-- (void)didReceiveMemoryWarning
-{
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
-}
+- (void)deallocOrUnload;
+- (void)updateFetchingLocationUI;
+- (void)startMonitoringLocationFetching;
+
+@end
+
+
+@implementation OnScreenButtonsViewController
 
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self updateFetchingLocationUI];
+    [self startMonitoringLocationFetching];
 }
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
+#pragma mark - IBActions
 
 - (IBAction)zoomPlusButtonTapped:(id)sender {
     [self.mapView zoomIn];
@@ -46,5 +37,110 @@
 - (IBAction)zoomMinusButtonTapped:(id)sender {
     [self.mapView zoomOut];
 }
+
+- (IBAction)locateMeButtonTapped:(id)sender {
+    [self.locationFetcher acquireUserLocationFromMapView];
+}
+
+#pragma mark - Monitoring Location Fetching
+
+- (void)startMonitoringLocationFetching
+{
+    [self.locationFetcher addObserver:self forKeyPath:@"fetchingLocation" options:0 context:NULL];    
+}
+
+- (void)stopMonitoringLocationFetching
+{
+    [self.locationFetcher removeObserver:self forKeyPath:@"fetchingLocation"];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    if ((object == self.locationFetcher) && [keyPath isEqualToString:@"fetchingLocation"]) {
+        [self updateFetchingLocationUI];
+    }
+    else {
+        [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
+    }
+}
+
+#pragma mark - Handle Fetched Location
+
+- (void)setupActivityIndicatorVisible:(BOOL)activityShouldBeVisible
+{
+    if (activityShouldBeVisible) {
+        self.activityIndicator.hidden = NO;
+        [self.locateMeButton addSubview:self.activityIndicator];
+        self.activityIndicator.frame = CGRectMake(floorf((CGRectGetWidth(self.locateMeButton.bounds) - CGRectGetWidth(self.activityIndicator.bounds)) / 2.0f),
+                                                  floorf((CGRectGetHeight(self.locateMeButton.bounds) - CGRectGetHeight(self.activityIndicator.bounds)) / 2.0f),
+                                                  CGRectGetWidth(self.activityIndicator.bounds),
+                                                  CGRectGetHeight(self.activityIndicator.bounds));
+    }
+    else {
+        self.activityIndicator.hidden = YES;
+        [self.activityIndicator removeFromSuperview];
+    }
+}
+
+- (void)setupLocateMeButtonForFetchingStatus:(BOOL)isFetchingLocation
+{
+    if (isFetchingLocation) {
+        [self.locateMeButton setImage:nil forState:UIControlStateNormal];
+        [self.locateMeButton setImage:nil forState:UIControlStateHighlighted];
+    }
+    else {
+        [self.locateMeButton setImage:[UIImage imageNamed:@"LocateMe.png"]
+                             forState:UIControlStateNormal];
+        [self.locateMeButton setImage:[UIImage imageNamed:@"LocateMeHighlighted.png"]
+                             forState:UIControlStateHighlighted];
+    }
+}
+
+- (void)updateFetchingLocationUI
+{
+    [self setupActivityIndicatorVisible:self.locationFetcher.fetchingLocation];
+    [self setupLocateMeButtonForFetchingStatus:self.locationFetcher.fetchingLocation];
+}
+
+- (void)locationFetcherDidFetchUserLocation:(LocationFetcher *)locationFetcher
+{
+    [self updateFetchingLocationUI];
+}
+
+- (void)locationFetcher:(LocationFetcher *)locationFetcher didFailWithError:(NSError *)error
+{
+    [self updateFetchingLocationUI];    
+}
+
+#pragma mark - Memory Management
+
+- (void)viewDidUnload
+{
+    [self deallocOrUnload];
+
+    [super viewDidUnload];
+}
+
+- (void)deallocOrUnload
+{
+    self.locateMeButton = nil;
+    self.locationFetcher = nil;
+    self.activityIndicator = nil;
+    
+    [self stopMonitoringLocationFetching];    
+}
+
+- (void)dealloc
+{
+    [self deallocOrUnload];
+
+    [super dealloc];
+}
+
+#pragma mark - Properties
+
+@synthesize locateMeButton;
+@synthesize locationFetcher;
+@synthesize activityIndicator;
 
 @end
