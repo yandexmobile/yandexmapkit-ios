@@ -16,7 +16,6 @@
 
 - (void)configureMapView;
 - (void)configureAndInstallAnnotations;
-- (void)configureAnnotationView:(YMKPinAnnotationView *)view forAnnotation:(id<YMKAnnotation>)annotation;
 
 @property (nonatomic, retain) PointAnnotation * annotation;
 
@@ -45,14 +44,28 @@
 {
     static NSString * identifier = @"pointAnnotation";
     YMKPinAnnotationView * view = (YMKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+
     if (view == nil) {
         view = [[[YMKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier] autorelease];
         view.canShowCallout = YES;        
     }
-    
-    [self configureAnnotationView:view forAnnotation:annotation];
-    
+
     return view;
+}
+
+- (YMKCalloutView *)mapView:(YMKMapView *)mapView calloutViewForAnnotation:(id<YMKAnnotation>)annotation {
+
+    static NSString * customCalloutIdentifier = @"customCalloutIdentefier";
+    YMKCalloutView * customCalloutView = [mapView dequeueReusableCalloutViewWithIdentifier:customCalloutIdentifier];
+
+    if (!customCalloutView) {
+        customCalloutView = [[[YMKCalloutView alloc] initWithReuseIdentifier:customCalloutIdentifier] autorelease];
+        customCalloutView.contentView = [CalloutView loadView];
+    }
+
+    // обновление полей calloutView.contentView, если нужно
+
+    return customCalloutView;
 }
 
 #pragma mark - Helpers
@@ -71,12 +84,6 @@
     
     [self.mapView addAnnotation:self.annotation];
     self.mapView.selectedAnnotation = self.annotation;
-}
-
-- (void)configureAnnotationView:(YMKPinAnnotationView *)view forAnnotation:(id<YMKAnnotation>)annotation {
-    if (annotation == self.annotation) {
-        view.calloutContentView = [CalloutView loadView];
-    }
 }
 
 #pragma mark - Properties
