@@ -66,7 +66,8 @@
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
     if ([keyPath isEqualToString:@"trafficInformers"] && object == self.mapView) {
-        [self updateTrafficInformer];
+        // Traffic informers are always processed in background
+        [self performSelectorOnMainThread:@selector(updateTrafficInformer) withObject:nil waitUntilDone:NO];
     }
     else {
 		[super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
