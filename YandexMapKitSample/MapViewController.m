@@ -55,6 +55,7 @@
 #pragma mark - Memory Management
 
 - (void)dealloc {
+    self.mapView.delegate = nil;
     self.mapView = nil;
 
     [super dealloc];
