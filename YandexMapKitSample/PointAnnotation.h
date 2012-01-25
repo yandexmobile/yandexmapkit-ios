@@ -12,7 +12,7 @@
 #import <Foundation/Foundation.h>
 #import "YandexMapKit.h"
 
-@interface PointAnnotation : NSObject <YMKAnnotation>
+@interface PointAnnotation : NSObject <YMKDraggableAnnotation>
 
 + (id)pointAnnotation;
 

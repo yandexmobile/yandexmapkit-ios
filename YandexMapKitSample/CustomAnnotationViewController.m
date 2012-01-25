@@ -41,14 +41,15 @@
 
 #pragma mark - YMKMapViewDelegate
 
-- (YMKAnnotationView *)mapView:(YMKMapView *)mapView viewForAnnotation:(id<YMKAnnotation>)annotation {
+- (YMKAnnotationView *)mapView:(YMKMapView *)aMapView viewForAnnotation:(id<YMKAnnotation>)anAnnotation {
     static NSString * identifier = @"pointAnnotation";
-    YMKPinAnnotationView * view = (YMKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+    YMKPinAnnotationView * view = (YMKPinAnnotationView *)[aMapView dequeueReusableAnnotationViewWithIdentifier:identifier];
     if (view == nil) {
-        view = [[[YMKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier] autorelease];
+        view = [[[YMKPinAnnotationView alloc] initWithAnnotation:anAnnotation
+                                                 reuseIdentifier:identifier] autorelease];
     }
     
-    [self configureAnnotationView:view forAnnotation:annotation];
+    [self configureAnnotationView:view forAnnotation:anAnnotation];
     return view;
 }
 
