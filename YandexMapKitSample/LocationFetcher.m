@@ -61,7 +61,15 @@ static NSTimeInterval const kLocationFetcherLocationAvailabilityCheckerTimerTime
     BOOL locationServicesEnabled = NO;
     BOOL locationServicesAllowed = YES;
     
-    locationServicesEnabled = [CLLocationManager locationServicesEnabled];
+    if ([CLLocationManager respondsToSelector:@selector(locationServicesEnabled)]) {
+        locationServicesEnabled = [CLLocationManager locationServicesEnabled];        
+    }
+    else {
+        CLLocationManager * tempLocationManager = [[CLLocationManager alloc] init];
+        locationServicesEnabled = tempLocationManager.locationServicesEnabled;
+        [tempLocationManager release];
+    }
+
     
     if ([CLLocationManager respondsToSelector:@selector(authorizationStatus)]) {
         CLAuthorizationStatus authorizationStatus = [CLLocationManager authorizationStatus];

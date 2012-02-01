@@ -10,7 +10,7 @@
 		C940DD2414264F8C004DB73E /* MapLayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C940DD2314264F8C004DB73E /* MapLayersViewController.m */; };
 		C940DD2614265AFF004DB73E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C940DD2514265AFF004DB73E /* Default.png */; };
 		C940DD2814265B02004DB73E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C940DD2714265B02004DB73E /* Default@2x.png */; };
-		C96EECA61423899B00F3D0CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECA51423899B00F3D0CF /* UIKit.framework */; };
+		C96EECA61423899B00F3D0CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECA51423899B00F3D0CF /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C96EECA81423899B00F3D0CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECA71423899B00F3D0CF /* Foundation.framework */; };
 		C96EECAA1423899B00F3D0CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECA91423899B00F3D0CF /* CoreGraphics.framework */; };
 		C96EECB01423899B00F3D0CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C96EECAE1423899B00F3D0CF /* InfoPlist.strings */; };
@@ -23,7 +23,7 @@
 		C96EECD714238DCE00F3D0CF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECD614238DCE00F3D0CF /* AVFoundation.framework */; };
 		C96EECD914238DD700F3D0CF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECD814238DD700F3D0CF /* QuartzCore.framework */; };
 		C96EECDB14238DDF00F3D0CF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECDA14238DDF00F3D0CF /* SystemConfiguration.framework */; };
-		C96EECDD14238DE700F3D0CF /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECDC14238DE700F3D0CF /* MessageUI.framework */; };
+		C96EECDD14238DE700F3D0CF /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECDC14238DE700F3D0CF /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C96EECDF14238DF700F3D0CF /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECDE14238DF700F3D0CF /* libstdc++.dylib */; };
 		C96EECE114238E0000F3D0CF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECE014238E0000F3D0CF /* libz.dylib */; };
 		C96EECE314238E0900F3D0CF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECE214238E0900F3D0CF /* libsqlite3.dylib */; };
@@ -531,12 +531,13 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/YandexMapKit/Headers";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-all_load";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -551,7 +552,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YandexMapKitSample/YandexMapKitSample-Prefix.pch";
 				INFOPLIST_FILE = "YandexMapKitSample/YandexMapKitSample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/YandexMapKit\"",
@@ -579,12 +580,12 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/YandexMapKit/Headers";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				OTHER_LDFLAGS = "-all_load";
 				SDKROOT = iphoneos;
 			};
@@ -601,12 +602,13 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/YandexMapKit/Headers";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-all_load";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -621,7 +623,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YandexMapKitSample/YandexMapKitSample-Prefix.pch";
 				INFOPLIST_FILE = "YandexMapKitSample/YandexMapKitSample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/YandexMapKit\"",
@@ -637,7 +639,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YandexMapKitSample/YandexMapKitSample-Prefix.pch";
 				INFOPLIST_FILE = "YandexMapKitSample/YandexMapKitSample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/YandexMapKit\"",
