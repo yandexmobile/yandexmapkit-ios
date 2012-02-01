@@ -130,11 +130,11 @@
 
 - (void)deallocOrUnload
 {
+    [self stopMonitoringLocationFetching];    
+
     self.locateMeButton = nil;
     self.locationFetcher = nil;
-    self.activityIndicator = nil;
-    
-    [self stopMonitoringLocationFetching];    
+    self.activityIndicator = nil;    
 }
 
 - (void)dealloc
