@@ -71,9 +71,9 @@
     self.mapView.selectedAnnotation = self.annotation;
 }
 
-- (void)configureAnnotationView:(YMKPinAnnotationView *)view forAnnotation:(id<YMKAnnotation>)annotation {
-    if (annotation == self.annotation) {
-        view.image = [UIImage imageNamed:@"yandex.png"];
+- (void)configureAnnotationView:(YMKPinAnnotationView *)aView forAnnotation:(id<YMKAnnotation>)anAnnotation {
+    if (anAnnotation == self.annotation) {
+        aView.image = [UIImage imageNamed:@"yandex.png"];
     }
 }
 
