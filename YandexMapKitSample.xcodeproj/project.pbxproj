@@ -67,6 +67,7 @@
 		C9D721C91426401200711704 /* yandex.png in Resources */ = {isa = PBXBuildFile; fileRef = C9D721C81426401200711704 /* yandex.png */; };
 		C9D721CD1426423A00711704 /* DraggableAnnotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D721CC1426423A00711704 /* DraggableAnnotationViewController.m */; };
 		C9D721D11426469900711704 /* TrafficViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D721D01426469900711704 /* TrafficViewController.m */; };
+		C9ECC93515738AAE000FF93D /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9ECC93415738AAE000FF93D /* CoreTelephony.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -149,6 +150,7 @@
 		C9D721CC1426423A00711704 /* DraggableAnnotationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableAnnotationViewController.m; sourceTree = "<group>"; };
 		C9D721CF1426469900711704 /* TrafficViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrafficViewController.h; sourceTree = "<group>"; };
 		C9D721D01426469900711704 /* TrafficViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrafficViewController.m; sourceTree = "<group>"; };
+		C9ECC93415738AAE000FF93D /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9ECC93515738AAE000FF93D /* CoreTelephony.framework in Frameworks */,
 				C96EECE91423958B00F3D0CF /* CoreLocation.framework in Frameworks */,
 				C96EECE714238E6800F3D0CF /* libYandexMapKit.a in Frameworks */,
 				C96EECE514238E3100F3D0CF /* libxml2.dylib in Frameworks */,
@@ -208,6 +211,7 @@
 		C96EECA41423899B00F3D0CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C9ECC93415738AAE000FF93D /* CoreTelephony.framework */,
 				C96EECE81423958B00F3D0CF /* CoreLocation.framework */,
 				C96EECE614238E6800F3D0CF /* libYandexMapKit.a */,
 				C96EECE414238E3100F3D0CF /* libxml2.dylib */,
