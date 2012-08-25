@@ -66,11 +66,6 @@
     self.subtitleLabel.highlighted = highlighted;
 }
 
-#pragma mark - Properties
-
-@synthesize titleLabel;
-@synthesize subtitleLabel;
-
 #pragma mark - Memory Management
 
 - (void)dealloc {

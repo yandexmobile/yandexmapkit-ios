@@ -86,10 +86,6 @@
     self.mapView.selectedAnnotation = self.annotation;
 }
 
-#pragma mark - Properties
-
-@synthesize annotation;
-
 #pragma mark - Memory Management
 
 - (void)dealloc {

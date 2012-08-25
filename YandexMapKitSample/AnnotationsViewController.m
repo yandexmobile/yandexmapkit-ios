@@ -111,11 +111,6 @@
     [detailViewController release];
 }
 
-#pragma mark - Properties
-
-@synthesize metroAnnotation;
-@synthesize yacAnnotation;
-
 #pragma mark - Memory Management
 
 - (void)dealloc {

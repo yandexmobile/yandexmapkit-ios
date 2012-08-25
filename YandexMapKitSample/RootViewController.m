@@ -122,10 +122,6 @@
     return [self.samples objectAtIndex:indexPath.row];
 }
 
-#pragma mark - Properties
-
-@synthesize samples;
-
 #pragma mark - Memory Management
 
 - (void)dealloc {

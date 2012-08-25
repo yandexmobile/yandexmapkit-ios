@@ -17,8 +17,4 @@
     return [[[[self class] alloc] init] autorelease];
 }
 
-@synthesize title;
-@synthesize subtitle;
-@synthesize coordinate;
-
 @end

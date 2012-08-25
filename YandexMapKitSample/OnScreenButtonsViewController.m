@@ -144,10 +144,4 @@
     [super dealloc];
 }
 
-#pragma mark - Properties
-
-@synthesize locateMeButton;
-@synthesize locationFetcher;
-@synthesize activityIndicator;
-
 @end

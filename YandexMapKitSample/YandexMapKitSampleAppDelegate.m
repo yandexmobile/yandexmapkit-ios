@@ -12,9 +12,6 @@
 
 @implementation YandexMapKitSampleAppDelegate
 
-@synthesize window = _window;
-@synthesize navigationController = _navigationController;
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [YMKConfiguration sharedInstance].apiKey = [Settings sharedSettings].apiKey;

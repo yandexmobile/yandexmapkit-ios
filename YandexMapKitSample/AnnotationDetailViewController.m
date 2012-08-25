@@ -44,13 +44,6 @@
     self.coordinateLabel.text = NSHumanReadableStringFromMapCoordinate(self.annotation.coordinate);
 }
 
-#pragma mark - Properties
-
-@synthesize titleLabel;
-@synthesize subtitleLabel;
-@synthesize coordinateLabel;
-@synthesize annotation;
-
 #pragma mark - Memory Management
 
 - (void)dealloc {

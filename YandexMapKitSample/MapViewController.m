@@ -46,10 +46,6 @@
 - (void)configureAndInstallMapView {
 }
 
-#pragma mark - Properties
-
-@synthesize mapView;
-
 #pragma mark - Memory Management
 
 - (void)dealloc {

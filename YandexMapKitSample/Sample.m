@@ -42,12 +42,6 @@
     return self;
 }
 
-#pragma mark - Properties
-
-@synthesize title;
-@synthesize subtitle;
-@synthesize viewControllerClassName;
-
 #pragma mark - Memory Management
 
 - (void)dealloc {

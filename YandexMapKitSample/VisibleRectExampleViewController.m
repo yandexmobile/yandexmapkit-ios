@@ -22,11 +22,6 @@
 
 @implementation VisibleRectExampleViewController
 
-@synthesize locateMeButton;
-@synthesize annotation;
-@synthesize visibleRectView;
-
-
 - (void)configureMapView {
     self.mapView.showsUserLocation = NO;
     self.mapView.showTraffic = NO;
@@ -88,7 +83,7 @@
 #pragma mark - YMKMapViewDelegate
 
 - (CGRect)mapViewVisibleRect:(YMKMapView *)mapView {
-    return visibleRectView.frame;
+    return self.visibleRectView.frame;
 }
 
 @end

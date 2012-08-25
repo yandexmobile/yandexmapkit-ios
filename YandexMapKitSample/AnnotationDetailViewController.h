@@ -12,11 +12,7 @@
 #import <UIKit/UIKit.h>
 #import "YandexMapKit.h"
 
-@interface AnnotationDetailViewController : UIViewController {
-    UILabel *titleLabel;
-    UILabel *subtitleLabel;
-    UILabel *coordinateLabel;
-}
+@interface AnnotationDetailViewController : UIViewController
 
 @property (nonatomic, retain) IBOutlet UILabel *titleLabel;
 @property (nonatomic, retain) IBOutlet UILabel *subtitleLabel;
