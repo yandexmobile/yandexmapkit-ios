@@ -16,11 +16,6 @@
 
 @property (nonatomic, strong) NSMutableArray *layers;
 
-- (void)subscribeForMapLayerUpdates;
-- (void)unsubscribeFromLayerUpdates;
-- (void)updateMapLayers;
-- (void)configureMapView;
-
 @end
 
 

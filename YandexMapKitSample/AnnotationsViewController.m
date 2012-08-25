@@ -14,11 +14,6 @@
 
 @interface AnnotationsViewController ()
 
-- (void)configureMapView;
-- (void)configureAndInstallAnnotations;
-- (void)configureAnnotationView:(YMKPinAnnotationView *)view forAnnotation:(id<YMKAnnotation>)annotation;
-- (void)showDetailForAnnotation:(id<YMKAnnotation>)annotation;
-
 @property (nonatomic, strong) PointAnnotation * metroAnnotation;
 @property (nonatomic, strong) PointAnnotation * yacAnnotation;
 

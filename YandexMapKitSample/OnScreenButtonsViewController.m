@@ -21,10 +21,6 @@
 @property (nonatomic, weak) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property (nonatomic, weak) IBOutlet UIButton *locateMeButton;
 
-- (void)deallocOrUnload;
-- (void)updateFetchingLocationUI;
-- (void)startMonitoringLocationFetching;
-
 @end
 
 

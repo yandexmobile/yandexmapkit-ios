@@ -15,11 +15,6 @@
 
 @interface RootViewController ()
 
-- (void)configureTableView;
-- (void)configureTableViewCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
-- (void)readSamples;
-- (Sample *)sampleAtIndexPath:(NSIndexPath *)indexPath;
-
 @property (nonatomic, copy) NSArray * samples;
 
 @end

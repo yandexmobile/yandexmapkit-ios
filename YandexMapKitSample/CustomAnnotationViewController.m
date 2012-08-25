@@ -13,10 +13,6 @@
 
 @interface CustomAnnotationViewController ()
 
-- (void)configureMapView;
-- (void)configureAndInstallAnnotations;
-- (void)configureAnnotationView:(YMKPinAnnotationView *)view forAnnotation:(id<YMKAnnotation>)annotation;
-
 @property (nonatomic, strong) PointAnnotation * annotation;
 
 @end

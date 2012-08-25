@@ -17,8 +17,6 @@
 @property (nonatomic, weak) IBOutlet UILabel *subtitleLabel;
 @property (nonatomic, weak) IBOutlet UILabel *coordinateLabel;
 
-- (void)configureAnnotationDetail;
-
 @end
 
 

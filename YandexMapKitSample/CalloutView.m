@@ -11,13 +11,6 @@
 
 #import "CalloutView.h"
 
-@interface CalloutView ()
-
-+ (NSArray *)nibViews;
-
-@end
-
-
 @implementation CalloutView
 
 + (NSArray *)nibViews {

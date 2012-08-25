@@ -11,16 +11,6 @@
 
 #import "TrafficViewController.h"
 
-@interface TrafficViewController ()
-
-- (void)subscribeForTrafficNotifications;
-- (void)unsubscribeFromTrafficNotifications;
-- (void)updateTrafficInformer;
-- (void)configureMapView;
-
-@end
-
-
 @implementation TrafficViewController
 
 #pragma mark - View lifecycle

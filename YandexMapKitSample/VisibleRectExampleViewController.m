@@ -20,8 +20,6 @@
 
 @property (nonatomic, strong) PointAnnotation * annotation;
 
-- (void)deallocOrUnload;
-
 @end
 
 

@@ -14,9 +14,6 @@
 
 @interface CustomCalloutViewController ()
 
-- (void)configureMapView;
-- (void)configureAndInstallAnnotations;
-
 @property (nonatomic, strong) PointAnnotation * annotation;
 
 @end

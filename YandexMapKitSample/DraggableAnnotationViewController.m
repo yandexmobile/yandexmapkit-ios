@@ -13,9 +13,6 @@
 
 @interface DraggableAnnotationViewController ()
 
-- (void)configureMapView;
-- (void)configureAndInstallAnnotations;
-
 @property (nonatomic, strong) PointAnnotation * annotation;
 
 @end

@@ -11,13 +11,6 @@
 
 #import "MapViewController.h"
 
-@interface MapViewController ()
-
-- (void)configureAndInstallMapView;
-
-@end
-
-
 @implementation MapViewController
 
 #pragma mark - View lifecycle
