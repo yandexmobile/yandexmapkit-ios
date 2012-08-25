@@ -68,6 +68,14 @@
 			<key>ViewControllerClass</key>
 			<string>VisibleRectExampleViewController</string>
 		</dict>
+		<dict>
+			<key>Title</key>
+			<string>YMKMapImageBuilder</string>
+			<key>Subtitle</key>
+			<string>Пример работы с YMKMapImageBuilder</string>
+			<key>ViewControllerClass</key>
+			<string>StaticMapExampleViewController</string>
+		</dict>
 	</array>
 </dict>
 </plist>

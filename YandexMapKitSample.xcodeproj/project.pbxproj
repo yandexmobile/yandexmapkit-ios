@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7662D8B415E4291700672896 /* StaticMapExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7662D8B215E4290F00672896 /* StaticMapExampleViewController.m */; };
+		7662D8B515E4291A00672896 /* StaticMapExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7662D8B315E4290F00672896 /* StaticMapExampleViewController.xib */; };
 		76FC1C741591024E00A757A3 /* VisibleRectExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76FC1C721591024E00A757A3 /* VisibleRectExampleViewController.m */; };
 		76FC1C751591024E00A757A3 /* VisibleRectExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76FC1C731591024E00A757A3 /* VisibleRectExampleViewController.xib */; };
 		76FC1D5915923E4B00A757A3 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76FC1D5715923E4B00A757A3 /* SettingsViewController.m */; };
@@ -75,6 +77,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7662D8B115E4290F00672896 /* StaticMapExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticMapExampleViewController.h; sourceTree = "<group>"; };
+		7662D8B215E4290F00672896 /* StaticMapExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticMapExampleViewController.m; sourceTree = "<group>"; };
+		7662D8B315E4290F00672896 /* StaticMapExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StaticMapExampleViewController.xib; sourceTree = "<group>"; };
 		76FC1C711591024E00A757A3 /* VisibleRectExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisibleRectExampleViewController.h; sourceTree = "<group>"; };
 		76FC1C721591024E00A757A3 /* VisibleRectExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisibleRectExampleViewController.m; sourceTree = "<group>"; };
 		76FC1C731591024E00A757A3 /* VisibleRectExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisibleRectExampleViewController.xib; sourceTree = "<group>"; };
@@ -191,6 +196,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7662D8B015E428EC00672896 /* StaticMapExampleViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7662D8B115E4290F00672896 /* StaticMapExampleViewController.h */,
+				7662D8B215E4290F00672896 /* StaticMapExampleViewController.m */,
+				7662D8B315E4290F00672896 /* StaticMapExampleViewController.xib */,
+			);
+			name = StaticMapExampleViewController;
+			sourceTree = "<group>";
+		};
 		76FC1C70159101B100A757A3 /* mapViewVisibleRect */ = {
 			isa = PBXGroup;
 			children = (
@@ -362,6 +377,7 @@
 				C940DD2014264EAB004DB73E /* Map Layers View Controller */,
 				C994B9F71496ABD600980A9E /* On-Screen Buttons View Controller */,
 				76FC1C70159101B100A757A3 /* mapViewVisibleRect */,
+				7662D8B015E428EC00672896 /* StaticMapExampleViewController */,
 			);
 			name = "Yandex MapKit Samples";
 			sourceTree = "<group>";
@@ -507,6 +523,7 @@
 				C9B49A82149752F60090387C /* LocateMeHighlighted@2x.png in Resources */,
 				76FC1C751591024E00A757A3 /* VisibleRectExampleViewController.xib in Resources */,
 				76FC1D5A15923E4B00A757A3 /* SettingsViewController.xib in Resources */,
+				7662D8B515E4291A00672896 /* StaticMapExampleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +552,7 @@
 				76FC1C741591024E00A757A3 /* VisibleRectExampleViewController.m in Sources */,
 				76FC1D5915923E4B00A757A3 /* SettingsViewController.m in Sources */,
 				76FC1D5D1592437300A757A3 /* Settings.m in Sources */,
+				7662D8B415E4291700672896 /* StaticMapExampleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
