@@ -33,12 +33,12 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.navigationController.toolbarHidden = NO;
+    [self.navigationController setToolbarHidden:NO animated:animated];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-    self.navigationController.toolbarHidden = YES;
+    [self.navigationController setToolbarHidden:YES animated:animated];
 }
 
 - (void)viewDidUnload {
