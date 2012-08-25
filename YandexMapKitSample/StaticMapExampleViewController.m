@@ -16,8 +16,8 @@
 
 @interface StaticMapExampleViewController () <YMKMapImageBuilderDelegate>
 
-@property (nonatomic, strong) IBOutlet UIImageView *staticMap;
-@property (nonatomic, strong) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (nonatomic, weak) IBOutlet UIImageView *staticMap;
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property (nonatomic, strong) YMKMapImageBuilder *mapImageBuilder;
 
 @end

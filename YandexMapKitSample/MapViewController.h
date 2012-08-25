@@ -16,6 +16,6 @@
 
 @interface MapViewController : UIViewController <YMKMapViewDelegate>
 
-@property (nonatomic, strong) IBOutlet YMKMapView * mapView;
+@property (nonatomic, weak) IBOutlet YMKMapView * mapView;
 
 @end

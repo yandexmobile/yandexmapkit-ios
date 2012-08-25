@@ -18,8 +18,8 @@
 - (IBAction)zoomMinusButtonTapped:(id)sender;
 - (IBAction)locateMeButtonTapped:(id)sender;
 
-@property (nonatomic, strong) IBOutlet YMKLocationFetcher *locationFetcher;
-@property (nonatomic, strong) IBOutlet UIActivityIndicatorView *activityIndicator;
-@property (nonatomic, strong) IBOutlet UIButton *locateMeButton;
+@property (nonatomic, weak) IBOutlet YMKLocationFetcher *locationFetcher;
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (nonatomic, weak) IBOutlet UIButton *locateMeButton;
 
 @end

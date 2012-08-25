@@ -14,7 +14,7 @@
 
 @interface SettingsViewController ()
 
-@property(nonatomic, strong) IBOutlet UITextField *keyTextField;
+@property(nonatomic, weak) IBOutlet UITextField *keyTextField;
 
 @end
 
