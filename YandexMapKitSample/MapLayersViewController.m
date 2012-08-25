@@ -10,8 +10,11 @@
  */
 
 #import "MapLayersViewController.h"
+#import "YMKConfiguration.h"
 
 @interface MapLayersViewController ()
+
+@property (nonatomic, retain) NSMutableArray *layers;
 
 - (void)subscribeForMapLayerUpdates;
 - (void)unsubscribeFromLayerUpdates;
@@ -62,12 +65,14 @@
 #pragma mark - Layers Notifications
 
 - (void)updateMapLayers {
-    NSArray * layerInfos = self.mapView.configuration.mapLayers.infos;
+    NSArray * layerInfos = [YMKConfiguration sharedInstance].mapLayers.infos;
     NSMutableArray * layerTitles = [[NSMutableArray alloc] initWithCapacity:[layerInfos count]];
+    self.layers = [NSMutableArray arrayWithCapacity:[layerInfos count]];
     
     for (YMKMapLayerInfo * layerInfo in layerInfos) {
         if (layerInfo.auxiliary == NO) {
             [layerTitles addObject:layerInfo.localizedName];
+            [self.layers addObject:layerInfo];
         }
     }
     
@@ -86,15 +91,16 @@
 
 - (void)layerChange:(UISegmentedControl *)sender {
     NSInteger index = sender.selectedSegmentIndex;
-    self.mapView.visibleLayerIdentifier = index + 1;
+    YMKMapLayerInfo *layerInfo = [self.layers objectAtIndex:index];
+    self.mapView.visibleLayerIdentifier = layerInfo.identifier;
 }
 
 - (void)subscribeForMapLayerUpdates {
-    [self.mapView.configuration addObserver:self forKeyPath:@"mapLayers" options:0 context:NULL];
+    [[YMKConfiguration sharedInstance] addObserver:self forKeyPath:@"mapLayers" options:0 context:NULL];
 }
 
 - (void)unsubscribeFromLayerUpdates {
-    [self.mapView.configuration removeObserver:self forKeyPath:@"mapLayers"];
+    [[YMKConfiguration sharedInstance] removeObserver:self forKeyPath:@"mapLayers"];
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
@@ -110,6 +116,9 @@
 
 - (void)dealloc {
     [self unsubscribeFromLayerUpdates];
+
+    self.layers = nil;
+
     [super dealloc];
 }
 
