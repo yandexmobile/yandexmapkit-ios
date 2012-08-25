@@ -61,27 +61,6 @@
     [self.mapView scrollToAnnotation:self.annotation animated:YES];
 }
 
-#pragma mark - Memory Management
-
-- (void)viewDidUnload
-{
-    [self deallocOrUnload];
-
-    [super viewDidUnload];
-}
-
-- (void)deallocOrUnload
-{
-    self.locateMeButton = nil;
-    self.visibleRectView = nil;
-}
-
-- (void)dealloc
-{
-    [self deallocOrUnload];
-
-}
-
 #pragma mark - YMKMapViewDelegate
 
 - (CGRect)mapViewVisibleRect:(YMKMapView *)mapView {

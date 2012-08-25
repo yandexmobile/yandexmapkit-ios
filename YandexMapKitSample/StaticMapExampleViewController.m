@@ -50,28 +50,6 @@
     [self configureMapView];
 }
 
-#pragma mark - Memory Management
-
-- (void)viewDidUnload
-{
-    [self deallocOrUnload];
-
-    [super viewDidUnload];
-}
-
-- (void)deallocOrUnload
-{
-    self.staticMap = nil;
-    self.activityIndicator = nil;
-}
-
-- (void)dealloc
-{
-    [self deallocOrUnload];
-
-}
-
-
 - (YMKMapImageBuilder *)mapImageBuilder {
     if (!_mapImageBuilder) {
         _mapImageBuilder = [[YMKMapImageBuilder alloc] init];

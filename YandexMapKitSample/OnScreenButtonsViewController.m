@@ -125,25 +125,9 @@
 
 #pragma mark - Memory Management
 
-- (void)viewDidUnload
-{
-    [self deallocOrUnload];
-
-    [super viewDidUnload];
-}
-
-- (void)deallocOrUnload
-{
-    [self stopMonitoringLocationFetching];    
-
-    self.locateMeButton = nil;
-    self.locationFetcher = nil;
-    self.activityIndicator = nil;    
-}
-
 - (void)dealloc
 {
-    [self deallocOrUnload];
+    [self stopMonitoringLocationFetching];
 }
 
 @end
