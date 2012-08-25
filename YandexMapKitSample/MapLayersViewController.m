@@ -28,7 +28,7 @@
 
     [self subscribeForMapLayerUpdates];
     [self configureMapView];
-    [self updateMapLayers];
+    [self handleMapLayersChange];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -59,26 +59,49 @@
 
 #pragma mark - Layers Notifications
 
-- (void)updateMapLayers {
-    NSArray * layerInfos = [YMKConfiguration sharedInstance].mapLayers.infos;
-    NSMutableArray * layerTitles = [[NSMutableArray alloc] initWithCapacity:[layerInfos count]];
+- (void)handleMapLayersChange
+{
+    [self populateVisibleLayerInfoArray];
+    [self configureVisibleLayerSegmentedControl];
+}
+
+- (void)populateVisibleLayerInfoArray
+{
+    NSArray *layerInfos = [YMKConfiguration sharedInstance].mapLayers.infos;
     self.layers = [NSMutableArray arrayWithCapacity:[layerInfos count]];
-    
-    for (YMKMapLayerInfo * layerInfo in layerInfos) {
+
+    for (YMKMapLayerInfo *layerInfo in layerInfos) {
         if (layerInfo.auxiliary == NO) {
-            [layerTitles addObject:layerInfo.localizedName];
             [self.layers addObject:layerInfo];
         }
     }
-    
-    UISegmentedControl * segmentedControl = [[UISegmentedControl alloc] initWithItems:layerTitles];
+}
+
+- (UISegmentedControl *)visibleLayerSegmentedControl
+{
+    UISegmentedControl * segmentedControl = [[UISegmentedControl alloc] initWithItems:[self visibleLayerTitles]];
     segmentedControl.segmentedControlStyle = UISegmentedControlStyleBar;
     segmentedControl.selectedSegmentIndex = (self.mapView.visibleLayerIdentifier - 1);
     [segmentedControl addTarget:self action:@selector(layerChange:) forControlEvents:UIControlEventValueChanged];
-    
-    UIBarButtonItem * item = [[UIBarButtonItem alloc] initWithCustomView:segmentedControl];
-    self.toolbarItems = [NSArray arrayWithObject:item];
-    
+
+    return segmentedControl;
+}
+
+- (NSArray *)visibleLayerTitles
+{
+    NSMutableArray *result = [NSMutableArray arrayWithCapacity:[self.layers count]];
+    for (YMKMapLayerInfo *layerInfo in self.layers) {
+        [result addObject:layerInfo.localizedName];
+    }
+
+    return result;
+}
+
+- (void)configureVisibleLayerSegmentedControl
+{
+    UIBarButtonItem * item = [[UIBarButtonItem alloc] initWithCustomView:[self visibleLayerSegmentedControl]];
+    self.toolbarItems = @[ item ];
+
 }
 
 - (void)layerChange:(UISegmentedControl *)sender {
@@ -97,7 +120,7 @@
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
     if ([keyPath isEqualToString:@"mapLayers"]) {
-        [self updateMapLayers];
+        [self handleMapLayersChange];
     }
     else {
 		[super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
