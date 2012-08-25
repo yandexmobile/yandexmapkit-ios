@@ -15,14 +15,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [YMKConfiguration sharedInstance].apiKey = [Settings sharedSettings].apiKey;
-    
-    if ([self.window respondsToSelector:@selector(setRootViewController:)]) {
-        self.window.rootViewController = self.navigationController;
-    }
-    else {
-        [self.window addSubview:self.navigationController.view];        
-    }
 
+    self.window.rootViewController = self.navigationController;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

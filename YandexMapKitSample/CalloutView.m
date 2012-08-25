@@ -20,30 +20,9 @@
 
 @implementation CalloutView
 
-// Checks whether we can use UINib while running on iOS 3.x as required
-// by iOS 4.0 release notes (refer to Interface Builder section of the following
-// document: http://developer.apple.com/library/ios/#releasenotes/General/RN-iPhoneSDK-4_0/_index.html )
-+ (BOOL)canUseUINib {
-    Class uiNibClass = NSClassFromString(@"UINib");
-    
-    if ([uiNibClass respondsToSelector:@selector(nibWithNibName:bundle:)]) {
-        return YES;
-    }
-
-    return NO;
-}
-
 + (NSArray *)nibViews {
-    NSString * nibName = @"CalloutView";
-    NSArray * result = nil;
-
-    if ([self canUseUINib]) {
-        UINib * uiNib = [UINib nibWithNibName:nibName bundle:nil];
-        result = [uiNib instantiateWithOwner:nil options:nil];
-    }
-    else {
-        result = [[NSBundle mainBundle] loadNibNamed:nibName owner:nil options:nil];
-    }
+    UINib *uiNib = [UINib nibWithNibName:@"CalloutView" bundle:nil];
+    NSArray *result = [uiNib instantiateWithOwner:nil options:nil];
     
     return result;
 }
