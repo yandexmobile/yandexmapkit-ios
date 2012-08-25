@@ -7,6 +7,8 @@
 //
 
 #import "YandexMapKitSampleAppDelegate.h"
+#import "Settings.h"
+#import <YMKConfiguration.h>
 
 @implementation YandexMapKitSampleAppDelegate
 
@@ -15,8 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
-    // Add the navigation controller's view to the window and display.
+    [YMKConfiguration sharedInstance].apiKey = [Settings sharedSettings].apiKey;
     
     if ([self.window respondsToSelector:@selector(setRootViewController:)]) {
         self.window.rootViewController = self.navigationController;

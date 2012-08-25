@@ -44,8 +44,6 @@
 #pragma mark - Helpers
 
 - (void)configureAndInstallMapView {
-    // Replace with your own Yandex Map Kit API key
-    self.mapView.apiKey = nil;
 }
 
 #pragma mark - Properties

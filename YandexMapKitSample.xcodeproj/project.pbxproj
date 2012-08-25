@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76FC1D5D1592437300A757A3 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 76FC1D5C1592437300A757A3 /* Settings.m */; };
 		C940DD2414264F8C004DB73E /* MapLayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C940DD2314264F8C004DB73E /* MapLayersViewController.m */; };
 		C940DD2614265AFF004DB73E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C940DD2514265AFF004DB73E /* Default.png */; };
 		C940DD2814265B02004DB73E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C940DD2714265B02004DB73E /* Default@2x.png */; };
@@ -70,6 +71,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76FC1D5B1592437300A757A3 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		76FC1D5C1592437300A757A3 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
 		C940DD2214264F8C004DB73E /* MapLayersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapLayersViewController.h; sourceTree = "<group>"; };
 		C940DD2314264F8C004DB73E /* MapLayersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapLayersViewController.m; sourceTree = "<group>"; };
 		C940DD2514265AFF004DB73E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
@@ -178,6 +181,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76FC1D5515923DE800A757A3 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				76FC1D5B1592437300A757A3 /* Settings.h */,
+				76FC1D5C1592437300A757A3 /* Settings.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 		C940DD2014264EAB004DB73E /* Map Layers View Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +249,7 @@
 				C96EECB71423899B00F3D0CF /* MainWindow.xib */,
 				C99C785E1426192400380582 /* Map View Controller */,
 				C9D7219B14261BEE00711704 /* Root View Controller */,
+				76FC1D5515923DE800A757A3 /* Settings */,
 				C9D721A7142623AE00711704 /* Yandex MapKit Samples */,
 				C96EECAC1423899B00F3D0CF /* Supporting Files */,
 			);
@@ -493,6 +506,7 @@
 				C9D721D11426469900711704 /* TrafficViewController.m in Sources */,
 				C940DD2414264F8C004DB73E /* MapLayersViewController.m in Sources */,
 				C994B9FF1496ACD400980A9E /* OnScreenButtonsViewController.m in Sources */,
+				76FC1D5D1592437300A757A3 /* Settings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
