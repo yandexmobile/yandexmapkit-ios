@@ -16,9 +16,9 @@
 
 @interface StaticMapExampleViewController () <YMKMapImageBuilderDelegate>
 
-@property (nonatomic, retain) IBOutlet UIImageView *staticMap;
-@property (nonatomic, retain) IBOutlet UIActivityIndicatorView *activityIndicator;
-@property (nonatomic, retain) YMKMapImageBuilder *mapImageBuilder;
+@property (nonatomic, strong) IBOutlet UIImageView *staticMap;
+@property (nonatomic, strong) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (nonatomic, strong) YMKMapImageBuilder *mapImageBuilder;
 
 @end
 
@@ -69,7 +69,6 @@
 {
     [self deallocOrUnload];
 
-    [super dealloc];
 }
 
 
@@ -89,7 +88,6 @@
     annotation.title = [NSString stringWithFormat:@"#%d", 1 + [self.mapView.annotations count]];
     
     [self.mapView addAnnotation:annotation];
-    [annotation release];
     
     [self createStaticMap];
 }

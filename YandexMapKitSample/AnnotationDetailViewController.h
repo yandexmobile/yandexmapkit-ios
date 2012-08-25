@@ -14,10 +14,10 @@
 
 @interface AnnotationDetailViewController : UIViewController
 
-@property (nonatomic, retain) IBOutlet UILabel *titleLabel;
-@property (nonatomic, retain) IBOutlet UILabel *subtitleLabel;
-@property (nonatomic, retain) IBOutlet UILabel *coordinateLabel;
+@property (nonatomic, strong) IBOutlet UILabel *titleLabel;
+@property (nonatomic, strong) IBOutlet UILabel *subtitleLabel;
+@property (nonatomic, strong) IBOutlet UILabel *coordinateLabel;
 
-@property (nonatomic, retain) id<YMKAnnotation> annotation;
+@property (nonatomic, strong) id<YMKAnnotation> annotation;
 
 @end

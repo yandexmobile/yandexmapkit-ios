@@ -14,7 +14,7 @@
 @implementation PointAnnotation
 
 + (id)pointAnnotation {
-    return [[[[self class] alloc] init] autorelease];
+    return [[[self class] alloc] init];
 }
 
 @end

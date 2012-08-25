@@ -13,7 +13,7 @@
 
 @interface VisibleRectExampleViewController ()
 
-@property (nonatomic, retain) PointAnnotation * annotation;
+@property (nonatomic, strong) PointAnnotation * annotation;
 
 - (void)deallocOrUnload;
 
@@ -77,7 +77,6 @@
 {
     [self deallocOrUnload];
 
-    [super dealloc];
 }
 
 #pragma mark - YMKMapViewDelegate

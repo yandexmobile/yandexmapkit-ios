@@ -16,7 +16,7 @@
 - (void)configureMapView;
 - (void)configureAndInstallAnnotations;
 
-@property (nonatomic, retain) PointAnnotation * annotation;
+@property (nonatomic, strong) PointAnnotation * annotation;
 
 @end
 
@@ -44,8 +44,8 @@
     static NSString * identifier = @"pointAnnotation";
     YMKDraggablePinAnnotationView * view = (YMKDraggablePinAnnotationView *)[aMapView dequeueReusableAnnotationViewWithIdentifier:identifier];
     if (view == nil) {
-        view = [[[YMKDraggablePinAnnotationView alloc] initWithAnnotation:self.annotation
-                                                          reuseIdentifier:identifier] autorelease];
+        view = [[YMKDraggablePinAnnotationView alloc] initWithAnnotation:self.annotation
+                                                          reuseIdentifier:identifier];
         view.canShowCallout = YES;
         view.pinColor = YMKPinAnnotationColorBlue;
     }
@@ -74,10 +74,5 @@
 
 #pragma mark - Memory Management
 
-- (void)dealloc {
-    self.annotation = nil;
-    
-    [super dealloc];
-}
 
 @end

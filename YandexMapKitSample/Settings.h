@@ -14,7 +14,7 @@
 
 @interface Settings : NSObject
 
-@property (nonatomic, retain) NSString *apiKey;
+@property (nonatomic, strong) NSString *apiKey;
 
 + (Settings *)sharedSettings;
 

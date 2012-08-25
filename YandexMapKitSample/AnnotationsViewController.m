@@ -19,8 +19,8 @@
 - (void)configureAnnotationView:(YMKPinAnnotationView *)view forAnnotation:(id<YMKAnnotation>)annotation;
 - (void)showDetailForAnnotation:(id<YMKAnnotation>)annotation;
 
-@property (nonatomic, retain) PointAnnotation * metroAnnotation;
-@property (nonatomic, retain) PointAnnotation * yacAnnotation;
+@property (nonatomic, strong) PointAnnotation * metroAnnotation;
+@property (nonatomic, strong) PointAnnotation * yacAnnotation;
 
 @end
 
@@ -49,7 +49,7 @@
     static NSString * identifier = @"pointAnnotation";
     YMKPinAnnotationView * view = (YMKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
     if (view == nil) {
-        view = [[[YMKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier] autorelease];
+        view = [[YMKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
         view.canShowCallout = YES;
         
         UIButton * rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
@@ -108,16 +108,9 @@
     AnnotationDetailViewController * detailViewController = [[AnnotationDetailViewController alloc] init];
     detailViewController.annotation = annotation;
     [self.navigationController pushViewController:detailViewController animated:YES];
-    [detailViewController release];
 }
 
 #pragma mark - Memory Management
 
-- (void)dealloc {
-    self.metroAnnotation = nil;
-    self.yacAnnotation = nil;
-
-    [super dealloc];
-}
 
 @end

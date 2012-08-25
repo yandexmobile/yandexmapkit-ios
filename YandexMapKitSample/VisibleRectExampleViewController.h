@@ -15,7 +15,7 @@
 
 - (IBAction)locateMeButtonTapped:(id)sender;
 
-@property (nonatomic, retain) IBOutlet UIButton *locateMeButton;
-@property (nonatomic, retain) IBOutlet UIView *visibleRectView;
+@property (nonatomic, strong) IBOutlet UIButton *locateMeButton;
+@property (nonatomic, strong) IBOutlet UIView *visibleRectView;
 
 @end

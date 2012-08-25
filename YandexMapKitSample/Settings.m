@@ -29,7 +29,7 @@ static Settings *sharedSettings = nil;
     dispatch_once(&onceToken, ^{
         sharedSettings = [self new];
     });
-    return [[sharedSettings retain] autorelease];
+    return sharedSettings;
 }
 
 - (NSString *)apiKey {

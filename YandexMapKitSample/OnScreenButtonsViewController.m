@@ -140,8 +140,6 @@
 - (void)dealloc
 {
     [self deallocOrUnload];
-
-    [super dealloc];
 }
 
 @end

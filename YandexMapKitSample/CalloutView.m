@@ -47,11 +47,5 @@
 
 #pragma mark - Memory Management
 
-- (void)dealloc {
-    self.titleLabel = nil;
-    self.subtitleLabel = nil;
-    
-    [super dealloc];
-}
 
 @end

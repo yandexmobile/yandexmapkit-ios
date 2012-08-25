@@ -17,7 +17,7 @@
 - (void)configureMapView;
 - (void)configureAndInstallAnnotations;
 
-@property (nonatomic, retain) PointAnnotation * annotation;
+@property (nonatomic, strong) PointAnnotation * annotation;
 
 @end
 
@@ -46,7 +46,7 @@
     YMKPinAnnotationView * view = (YMKPinAnnotationView *)[aMapView dequeueReusableAnnotationViewWithIdentifier:identifier];
 
     if (view == nil) {
-        view = [[[YMKPinAnnotationView alloc] initWithAnnotation:anAnnotation reuseIdentifier:identifier] autorelease];
+        view = [[YMKPinAnnotationView alloc] initWithAnnotation:anAnnotation reuseIdentifier:identifier];
         view.canShowCallout = YES;        
     }
 
@@ -59,7 +59,7 @@
     YMKCalloutView * customCalloutView = [mapView dequeueReusableCalloutViewWithIdentifier:customCalloutIdentifier];
 
     if (!customCalloutView) {
-        customCalloutView = [[[YMKCalloutView alloc] initWithReuseIdentifier:customCalloutIdentifier] autorelease];
+        customCalloutView = [[YMKCalloutView alloc] initWithReuseIdentifier:customCalloutIdentifier];
         customCalloutView.contentView = [CalloutView loadView];
     }
 
@@ -88,10 +88,5 @@
 
 #pragma mark - Memory Management
 
-- (void)dealloc {
-    self.annotation = nil;
-    
-    [super dealloc];
-}
 
 @end

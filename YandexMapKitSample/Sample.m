@@ -29,7 +29,7 @@
 }
 
 + (id)sampleWithDictionary:(NSDictionary *)dictionary {
-    return [[[[self class] alloc] initWithDictionary:dictionary] autorelease];
+    return [[[self class] alloc] initWithDictionary:dictionary];
 }
 
 - (id)initWithDictionary:(NSDictionary *)dictionary {
@@ -44,12 +44,5 @@
 
 #pragma mark - Memory Management
 
-- (void)dealloc {
-    self.title = nil;
-    self.subtitle = nil;
-    self.viewControllerClassName = nil;
-    
-    [super dealloc];
-}
 
 @end

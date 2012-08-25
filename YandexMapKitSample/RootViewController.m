@@ -39,7 +39,6 @@
     SettingsViewController *vc = [[SettingsViewController alloc] init];
     vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     [self presentModalViewController:vc animated:YES];
-    [vc release];
 }
 
 #pragma mark - View lifecycle
@@ -67,8 +66,8 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
-                                       reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
+                                       reuseIdentifier:CellIdentifier];
     }
     
     [self configureTableViewCell:cell atIndexPath:indexPath];
@@ -85,7 +84,6 @@
     viewController.title = sample.title;
 
     [self.navigationController pushViewController:viewController animated:YES];
-    [viewController release];
 }
 
 #pragma mark - Helpers
@@ -114,8 +112,6 @@
     
     self.samples = [NSArray arrayWithArray:tempArray];
     
-    [tempArray release];
-    [samplesDictionary release];
 }
 
 - (Sample *)sampleAtIndexPath:(NSIndexPath *)indexPath {
@@ -124,10 +120,5 @@
 
 #pragma mark - Memory Management
 
-- (void)dealloc {
-    self.samples = nil;
-    
-    [super dealloc];
-}
 
 @end

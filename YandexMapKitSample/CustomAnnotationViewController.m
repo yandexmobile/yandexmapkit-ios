@@ -17,7 +17,7 @@
 - (void)configureAndInstallAnnotations;
 - (void)configureAnnotationView:(YMKPinAnnotationView *)view forAnnotation:(id<YMKAnnotation>)annotation;
 
-@property (nonatomic, retain) PointAnnotation * annotation;
+@property (nonatomic, strong) PointAnnotation * annotation;
 
 @end
 
@@ -45,8 +45,8 @@
     static NSString * identifier = @"pointAnnotation";
     YMKPinAnnotationView * view = (YMKPinAnnotationView *)[aMapView dequeueReusableAnnotationViewWithIdentifier:identifier];
     if (view == nil) {
-        view = [[[YMKPinAnnotationView alloc] initWithAnnotation:anAnnotation
-                                                 reuseIdentifier:identifier] autorelease];
+        view = [[YMKPinAnnotationView alloc] initWithAnnotation:anAnnotation
+                                                 reuseIdentifier:identifier];
     }
     
     [self configureAnnotationView:view forAnnotation:anAnnotation];
@@ -79,10 +79,5 @@
 
 #pragma mark - Memory Management
 
-- (void)dealloc {
-    self.annotation = nil;
-    
-    [super dealloc];
-}
 
 @end

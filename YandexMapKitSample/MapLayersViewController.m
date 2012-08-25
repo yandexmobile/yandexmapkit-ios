@@ -14,7 +14,7 @@
 
 @interface MapLayersViewController ()
 
-@property (nonatomic, retain) NSMutableArray *layers;
+@property (nonatomic, strong) NSMutableArray *layers;
 
 - (void)subscribeForMapLayerUpdates;
 - (void)unsubscribeFromLayerUpdates;
@@ -84,9 +84,6 @@
     UIBarButtonItem * item = [[UIBarButtonItem alloc] initWithCustomView:segmentedControl];
     self.toolbarItems = [NSArray arrayWithObject:item];
     
-    [item release];
-    [layerTitles release];
-    [segmentedControl release];
 }
 
 - (void)layerChange:(UISegmentedControl *)sender {
@@ -117,9 +114,7 @@
 - (void)dealloc {
     [self unsubscribeFromLayerUpdates];
 
-    self.layers = nil;
 
-    [super dealloc];
 }
 
 @end

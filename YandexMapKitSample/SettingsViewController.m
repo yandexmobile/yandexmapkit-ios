@@ -14,17 +14,13 @@
 
 @interface SettingsViewController ()
 
-@property(nonatomic, retain) IBOutlet UITextField *keyTextField;
+@property(nonatomic, strong) IBOutlet UITextField *keyTextField;
 
 @end
 
 
 @implementation SettingsViewController
 
-- (void)dealloc {
-    self.keyTextField = nil;
-    [super dealloc];
-}
 
 - (void)viewDidLoad
 {

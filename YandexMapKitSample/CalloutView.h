@@ -14,8 +14,8 @@
 
 @interface CalloutView : UIView <YMKCalloutContentView>
 
-@property (nonatomic, retain) UILabel * titleLabel;
-@property (nonatomic, retain) UILabel * subtitleLabel;
+@property (nonatomic, strong) UILabel * titleLabel;
+@property (nonatomic, strong) UILabel * subtitleLabel;
 
 + (CalloutView *)loadView;
 - (void)setHighlighted:(BOOL)highlighted;

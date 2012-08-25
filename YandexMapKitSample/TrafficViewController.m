@@ -78,7 +78,6 @@
 
 - (void)dealloc {
     [self unsubscribeFromTrafficNotifications];
-    [super dealloc];
 }
 
 @end

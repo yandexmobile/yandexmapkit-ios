@@ -607,6 +607,7 @@
 		C96A65C6142669AE00E23D26 /* AdHoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YandexMapKitSample/YandexMapKitSample-Prefix.pch";
 				INFOPLIST_FILE = "YandexMapKitSample/YandexMapKitSample-Info.plist";
@@ -677,6 +678,7 @@
 		C96EECC31423899B00F3D0CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YandexMapKitSample/YandexMapKitSample-Prefix.pch";
 				INFOPLIST_FILE = "YandexMapKitSample/YandexMapKitSample-Info.plist";
@@ -692,6 +694,7 @@
 		C96EECC41423899B00F3D0CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YandexMapKitSample/YandexMapKitSample-Prefix.pch";
 				INFOPLIST_FILE = "YandexMapKitSample/YandexMapKitSample-Info.plist";
