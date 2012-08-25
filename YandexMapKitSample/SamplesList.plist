@@ -60,6 +60,14 @@
 			<key>ViewControllerClass</key>
 			<string>OnScreenButtonsViewController</string>
 		</dict>
+		<dict>
+			<key>Title</key>
+			<string>mapViewVisibleRect:</string>
+			<key>Subtitle</key>
+			<string>Пример работы с mapViewVisibleRect:</string>
+			<key>ViewControllerClass</key>
+			<string>VisibleRectExampleViewController</string>
+		</dict>
 	</array>
 </dict>
 </plist>

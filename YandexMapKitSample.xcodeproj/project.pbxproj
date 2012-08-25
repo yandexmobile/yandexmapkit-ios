@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76FC1C741591024E00A757A3 /* VisibleRectExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76FC1C721591024E00A757A3 /* VisibleRectExampleViewController.m */; };
+		76FC1C751591024E00A757A3 /* VisibleRectExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76FC1C731591024E00A757A3 /* VisibleRectExampleViewController.xib */; };
 		76FC1D5915923E4B00A757A3 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76FC1D5715923E4B00A757A3 /* SettingsViewController.m */; };
 		76FC1D5A15923E4B00A757A3 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76FC1D5815923E4B00A757A3 /* SettingsViewController.xib */; };
 		76FC1D5D1592437300A757A3 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 76FC1D5C1592437300A757A3 /* Settings.m */; };
@@ -73,6 +75,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76FC1C711591024E00A757A3 /* VisibleRectExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisibleRectExampleViewController.h; sourceTree = "<group>"; };
+		76FC1C721591024E00A757A3 /* VisibleRectExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisibleRectExampleViewController.m; sourceTree = "<group>"; };
+		76FC1C731591024E00A757A3 /* VisibleRectExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisibleRectExampleViewController.xib; sourceTree = "<group>"; };
 		76FC1D5615923E4B00A757A3 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		76FC1D5715923E4B00A757A3 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		76FC1D5815923E4B00A757A3 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
@@ -186,6 +191,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76FC1C70159101B100A757A3 /* mapViewVisibleRect */ = {
+			isa = PBXGroup;
+			children = (
+				76FC1C711591024E00A757A3 /* VisibleRectExampleViewController.h */,
+				76FC1C721591024E00A757A3 /* VisibleRectExampleViewController.m */,
+				76FC1C731591024E00A757A3 /* VisibleRectExampleViewController.xib */,
+			);
+			name = mapViewVisibleRect;
+			sourceTree = "<group>";
+		};
 		76FC1D5515923DE800A757A3 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -346,6 +361,7 @@
 				C9D721CE1426467600711704 /* Traffic View Controller */,
 				C940DD2014264EAB004DB73E /* Map Layers View Controller */,
 				C994B9F71496ABD600980A9E /* On-Screen Buttons View Controller */,
+				76FC1C70159101B100A757A3 /* mapViewVisibleRect */,
 			);
 			name = "Yandex MapKit Samples";
 			sourceTree = "<group>";
@@ -489,6 +505,7 @@
 				C9B49A80149752F60090387C /* LocateMe@2x.png in Resources */,
 				C9B49A81149752F60090387C /* LocateMeHighlighted.png in Resources */,
 				C9B49A82149752F60090387C /* LocateMeHighlighted@2x.png in Resources */,
+				76FC1C751591024E00A757A3 /* VisibleRectExampleViewController.xib in Resources */,
 				76FC1D5A15923E4B00A757A3 /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,6 +532,7 @@
 				C9D721D11426469900711704 /* TrafficViewController.m in Sources */,
 				C940DD2414264F8C004DB73E /* MapLayersViewController.m in Sources */,
 				C994B9FF1496ACD400980A9E /* OnScreenButtonsViewController.m in Sources */,
+				76FC1C741591024E00A757A3 /* VisibleRectExampleViewController.m in Sources */,
 				76FC1D5915923E4B00A757A3 /* SettingsViewController.m in Sources */,
 				76FC1D5D1592437300A757A3 /* Settings.m in Sources */,
 			);
