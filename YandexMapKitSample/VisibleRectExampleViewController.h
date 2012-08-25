@@ -13,9 +13,4 @@
 
 @interface VisibleRectExampleViewController : MapViewController
 
-- (IBAction)locateMeButtonTapped:(id)sender;
-
-@property (nonatomic, weak) IBOutlet UIButton *locateMeButton;
-@property (nonatomic, weak) IBOutlet UIView *visibleRectView;
-
 @end

@@ -10,6 +10,13 @@
 #import "Settings.h"
 #import <YMKConfiguration.h>
 
+@interface YandexMapKitSampleAppDelegate ()
+
+@property (nonatomic, weak) IBOutlet UINavigationController *navigationController;
+
+@end
+
+
 @implementation YandexMapKitSampleAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

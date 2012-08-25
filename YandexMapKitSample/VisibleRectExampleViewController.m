@@ -13,6 +13,11 @@
 
 @interface VisibleRectExampleViewController ()
 
+- (IBAction)locateMeButtonTapped:(id)sender;
+
+@property (nonatomic, weak) IBOutlet UIButton *locateMeButton;
+@property (nonatomic, weak) IBOutlet UIView *visibleRectView;
+
 @property (nonatomic, strong) PointAnnotation * annotation;
 
 - (void)deallocOrUnload;

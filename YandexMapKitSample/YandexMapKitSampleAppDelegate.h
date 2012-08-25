@@ -13,7 +13,6 @@
 
 @interface YandexMapKitSampleAppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (nonatomic, weak) IBOutlet UINavigationController *navigationController;
 @property (nonatomic, retain) UIWindow *window;
 
 @end

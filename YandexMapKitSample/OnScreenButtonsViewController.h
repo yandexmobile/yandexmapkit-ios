@@ -14,12 +14,4 @@
 
 @interface OnScreenButtonsViewController : MapViewController
 
-- (IBAction)zoomPlusButtonTapped:(id)sender;
-- (IBAction)zoomMinusButtonTapped:(id)sender;
-- (IBAction)locateMeButtonTapped:(id)sender;
-
-@property (nonatomic, weak) IBOutlet YMKLocationFetcher *locationFetcher;
-@property (nonatomic, weak) IBOutlet UIActivityIndicatorView *activityIndicator;
-@property (nonatomic, weak) IBOutlet UIButton *locateMeButton;
-
 @end
