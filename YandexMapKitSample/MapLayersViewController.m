@@ -100,7 +100,15 @@
 - (void)configureVisibleLayerSegmentedControl
 {
     UIBarButtonItem * item = [[UIBarButtonItem alloc] initWithCustomView:[self visibleLayerSegmentedControl]];
-    self.toolbarItems = @[ item ];
+
+    UIBarButtonItem * flexibleItemLeft = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                                                                                       target:nil
+                                                                                       action:NULL];
+    UIBarButtonItem * flexibleItemRight = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                                                                                        target:nil
+                                                                                        action:NULL];
+
+    self.toolbarItems = @[ flexibleItemLeft, item, flexibleItemRight ];
 
 }
 
