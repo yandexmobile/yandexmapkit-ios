@@ -41,7 +41,7 @@
 - (void)configureAnnotationDetail {
     self.titleLabel.text = self.annotation.title;
     self.subtitleLabel.text = self.annotation.subtitle;
-    self.coordinateLabel.text = NSStringFromMapCoordinate(self.annotation.coordinate, YES);
+    self.coordinateLabel.text = NSHumanReadableStringFromMapCoordinate(self.annotation.coordinate);
 }
 
 #pragma mark - Properties
