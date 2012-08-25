@@ -38,7 +38,4 @@
     self.subtitleLabel.highlighted = highlighted;
 }
 
-#pragma mark - Memory Management
-
-
 @end

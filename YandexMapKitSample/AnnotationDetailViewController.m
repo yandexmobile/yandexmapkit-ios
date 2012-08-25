@@ -46,6 +46,4 @@
     self.coordinateLabel.text = NSHumanReadableStringFromMapCoordinate(self.annotation.coordinate);
 }
 
-#pragma mark - Memory Management
-
 @end

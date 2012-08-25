@@ -113,7 +113,4 @@
     return [self.samples objectAtIndex:indexPath.row];
 }
 
-#pragma mark - Memory Management
-
-
 @end

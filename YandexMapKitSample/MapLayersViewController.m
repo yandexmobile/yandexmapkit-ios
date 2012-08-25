@@ -104,12 +104,8 @@
 	}
 }
 
-#pragma mark - Memory Management
-
 - (void)dealloc {
     [self unsubscribeFromLayerUpdates];
-
-
 }
 
 @end

@@ -69,7 +69,4 @@
     self.mapView.selectedAnnotation = self.annotation;
 }
 
-#pragma mark - Memory Management
-
-
 @end

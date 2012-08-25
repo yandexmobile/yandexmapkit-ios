@@ -105,7 +105,4 @@
     [self.navigationController pushViewController:detailViewController animated:YES];
 }
 
-#pragma mark - Memory Management
-
-
 @end

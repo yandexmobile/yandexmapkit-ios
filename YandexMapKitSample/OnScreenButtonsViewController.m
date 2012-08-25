@@ -123,8 +123,6 @@
     [self updateFetchingLocationUI];    
 }
 
-#pragma mark - Memory Management
-
 - (void)dealloc
 {
     [self stopMonitoringLocationFetching];

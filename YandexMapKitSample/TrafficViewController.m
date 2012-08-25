@@ -67,8 +67,6 @@
 	}
 }
 
-#pragma mark - Memory Management
-
 - (void)dealloc {
     [self unsubscribeFromTrafficNotifications];
 }
