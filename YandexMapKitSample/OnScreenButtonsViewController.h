@@ -9,8 +9,8 @@
  * You may obtain a copy of the License at http://legal.yandex.ru/mapkit/
  */
 
+#import "YandexMapKit.h"
 #import "MapViewController.h"
-#import "LocationFetcher.h"
 
 @interface OnScreenButtonsViewController : MapViewController
 
@@ -18,7 +18,7 @@
 - (IBAction)zoomMinusButtonTapped:(id)sender;
 - (IBAction)locateMeButtonTapped:(id)sender;
 
-@property (nonatomic, retain) IBOutlet LocationFetcher *locationFetcher;
+@property (nonatomic, retain) IBOutlet YMKLocationFetcher *locationFetcher;
 @property (nonatomic, retain) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property (nonatomic, retain) IBOutlet UIButton *locateMeButton;
 

@@ -43,7 +43,6 @@
 		C9B49A5F1496AE570090387C /* ZoomPlus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B49A571496AE570090387C /* ZoomPlus@2x.png */; };
 		C9B49A601496AE570090387C /* ZoomPlusHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B49A581496AE570090387C /* ZoomPlusHighlighted.png */; };
 		C9B49A611496AE570090387C /* ZoomPlusHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B49A591496AE570090387C /* ZoomPlusHighlighted@2x.png */; };
-		C9B49A681497280A0090387C /* LocationFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B49A67149728090090387C /* LocationFetcher.m */; };
 		C9B49A77149751710090387C /* OnScreenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B49A731497516F0090387C /* OnScreenButton.png */; };
 		C9B49A78149751710090387C /* OnScreenButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B49A74149751700090387C /* OnScreenButton@2x.png */; };
 		C9B49A79149751710090387C /* OnScreenButtonHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B49A75149751700090387C /* OnScreenButtonHighlighted.png */; };
@@ -115,8 +114,6 @@
 		C9B49A571496AE570090387C /* ZoomPlus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ZoomPlus@2x.png"; sourceTree = "<group>"; };
 		C9B49A581496AE570090387C /* ZoomPlusHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZoomPlusHighlighted.png; sourceTree = "<group>"; };
 		C9B49A591496AE570090387C /* ZoomPlusHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ZoomPlusHighlighted@2x.png"; sourceTree = "<group>"; };
-		C9B49A66149728090090387C /* LocationFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationFetcher.h; sourceTree = "<group>"; };
-		C9B49A67149728090090387C /* LocationFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationFetcher.m; sourceTree = "<group>"; };
 		C9B49A731497516F0090387C /* OnScreenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OnScreenButton.png; sourceTree = "<group>"; };
 		C9B49A74149751700090387C /* OnScreenButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OnScreenButton@2x.png"; sourceTree = "<group>"; };
 		C9B49A75149751700090387C /* OnScreenButtonHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OnScreenButtonHighlighted.png; sourceTree = "<group>"; };
@@ -282,8 +279,6 @@
 				C994B9FC1496ACD400980A9E /* OnScreenButtonsViewController.h */,
 				C994B9FD1496ACD400980A9E /* OnScreenButtonsViewController.m */,
 				C994B9FE1496ACD400980A9E /* OnScreenButtonsViewController.xib */,
-				C9B49A66149728090090387C /* LocationFetcher.h */,
-				C9B49A67149728090090387C /* LocationFetcher.m */,
 			);
 			name = "On-Screen Buttons View Controller";
 			sourceTree = "<group>";
@@ -498,7 +493,6 @@
 				C9D721D11426469900711704 /* TrafficViewController.m in Sources */,
 				C940DD2414264F8C004DB73E /* MapLayersViewController.m in Sources */,
 				C994B9FF1496ACD400980A9E /* OnScreenButtonsViewController.m in Sources */,
-				C9B49A681497280A0090387C /* LocationFetcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

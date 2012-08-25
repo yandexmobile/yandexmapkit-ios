@@ -109,12 +109,12 @@
     [self setupLocateMeButtonForFetchingStatus:self.locationFetcher.fetchingLocation];
 }
 
-- (void)locationFetcherDidFetchUserLocation:(LocationFetcher *)locationFetcher
+- (void)locationFetcherDidFetchUserLocation:(YMKLocationFetcher *)locationFetcher
 {
     [self updateFetchingLocationUI];
 }
 
-- (void)locationFetcher:(LocationFetcher *)locationFetcher didFailWithError:(NSError *)error
+- (void)locationFetcher:(YMKLocationFetcher *)locationFetcher didFailWithError:(NSError *)error
 {
     [self updateFetchingLocationUI];    
 }
