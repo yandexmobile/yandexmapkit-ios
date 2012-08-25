@@ -11,6 +11,7 @@
 
 #import "RootViewController.h"
 #import "Sample.h"
+#import "SettingsViewController.h"
 
 @interface RootViewController ()
 
@@ -32,6 +33,13 @@
         // Custom initialization
     }
     return self;
+}
+
+- (IBAction)settingsButtonTapped:(id)sender {
+    SettingsViewController *vc = [[SettingsViewController alloc] init];
+    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentModalViewController:vc animated:YES];
+    [vc release];
 }
 
 #pragma mark - View lifecycle
@@ -113,7 +121,6 @@
 - (Sample *)sampleAtIndexPath:(NSIndexPath *)indexPath {
     return [self.samples objectAtIndex:indexPath.row];
 }
-
 
 #pragma mark - Properties
 
