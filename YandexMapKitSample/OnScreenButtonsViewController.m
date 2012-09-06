@@ -11,15 +11,15 @@
 
 #import "OnScreenButtonsViewController.h"
 
-@interface OnScreenButtonsViewController ()
+@interface OnScreenButtonsViewController () <YMKLocationFetcherDelegate>
 
 - (IBAction)zoomPlusButtonTapped:(id)sender;
 - (IBAction)zoomMinusButtonTapped:(id)sender;
 - (IBAction)locateMeButtonTapped:(id)sender;
 
-@property (nonatomic, weak) IBOutlet YMKLocationFetcher *locationFetcher;
-@property (nonatomic, weak) IBOutlet UIActivityIndicatorView *activityIndicator;
-@property (nonatomic, weak) IBOutlet UIButton *locateMeButton;
+@property (nonatomic, strong) IBOutlet YMKLocationFetcher *locationFetcher;
+@property (nonatomic, strong) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (nonatomic, strong) IBOutlet UIButton *locateMeButton;
 
 @end
 
@@ -37,6 +37,11 @@
     [super viewDidLoad];
     [self updateFetchingLocationUI];
     [self startMonitoringLocationFetching];
+}
+
+- (void)configureAndInstallMapView
+{
+    self.mapView.showsUserLocation = YES;
 }
 
 #pragma mark - IBActions
@@ -113,14 +118,34 @@
     [self setupLocateMeButtonForFetchingStatus:self.locationFetcher.fetchingLocation];
 }
 
+#pragma mark - YMKLocationFetcherDelegate
+
 - (void)locationFetcherDidFetchUserLocation:(YMKLocationFetcher *)locationFetcher
 {
     [self updateFetchingLocationUI];
+    [self scrollToUserLocation];
+}
+
+- (void)scrollToUserLocation
+{
+    CLLocation *userLocation = self.mapView.userLocation.location;
+    [self.mapView setCenterCoordinate:userLocation.coordinate animated:YES];
 }
 
 - (void)locationFetcher:(YMKLocationFetcher *)locationFetcher didFailWithError:(NSError *)error
 {
-    [self updateFetchingLocationUI];    
+    [self updateFetchingLocationUI];
+    [self notifyUserWithLocationFetchingError:error];
+}
+
+- (void)notifyUserWithLocationFetchingError:(NSError *)error
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Unable To Fetch User Location", @"Alert title")
+                                                    message:[error localizedDescription]
+                                                   delegate:nil
+                                          cancelButtonTitle:NSLocalizedString(@"Dismiss", @"Dismiss alert button title")
+                                          otherButtonTitles:nil];
+    [alert show];
 }
 
 - (void)dealloc
