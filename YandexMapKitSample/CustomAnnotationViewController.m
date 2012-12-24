@@ -70,6 +70,7 @@
 - (void)configureAnnotationView:(YMKPinAnnotationView *)aView forAnnotation:(id<YMKAnnotation>)anAnnotation {
     if (anAnnotation == self.annotation) {
         aView.image = [UIImage imageNamed:@"yandex.png"];
+        aView.selectedImage = nil;
     }
 }
 
