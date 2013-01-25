@@ -9,7 +9,7 @@
     git clone https://github.com/yandexmobile/yandexmapkit-ios.git
 ```    
 
-2. [Скачайте](https://github.com/downloads/yandexmobile/yandexmapkit-ios/YandexMapKit.zip) архив с библиотекой, распакуйте его и положите папку ``YandexMapKit`` в папку с клонированным на предыдущем шаге репозиторием
+2. [Скачайте](http://m.soft.yandex.ru/download/mapkit/ios-v1/yamapkit-file.zip) архив с библиотекой, распакуйте его и положите папку ``YandexMapKit`` в папку с клонированным на предыдущем шаге репозиторием
 3. Подставьте свой API ключ в `-[YMKConfiguration setApiKey:]`
 4. Всё готово к запуску тестового проекта
 
