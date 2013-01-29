@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00FCBC771683641200A353D2 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00FCBC761683641200A353D2 /* OpenAL.framework */; };
+		00FCBCA21683649C00A353D2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00FCBCA11683649C00A353D2 /* AudioToolbox.framework */; };
 		7662D8B415E4291700672896 /* StaticMapExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7662D8B215E4290F00672896 /* StaticMapExampleViewController.m */; };
 		7662D8B515E4291A00672896 /* StaticMapExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7662D8B315E4290F00672896 /* StaticMapExampleViewController.xib */; };
 		76FC1C741591024E00A757A3 /* VisibleRectExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76FC1C721591024E00A757A3 /* VisibleRectExampleViewController.m */; };
@@ -31,7 +33,6 @@
 		C96EECD914238DD700F3D0CF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECD814238DD700F3D0CF /* QuartzCore.framework */; };
 		C96EECDB14238DDF00F3D0CF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECDA14238DDF00F3D0CF /* SystemConfiguration.framework */; };
 		C96EECDD14238DE700F3D0CF /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECDC14238DE700F3D0CF /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		C96EECDF14238DF700F3D0CF /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECDE14238DF700F3D0CF /* libstdc++.dylib */; };
 		C96EECE114238E0000F3D0CF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECE014238E0000F3D0CF /* libz.dylib */; };
 		C96EECE314238E0900F3D0CF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECE214238E0900F3D0CF /* libsqlite3.dylib */; };
 		C96EECE514238E3100F3D0CF /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECE414238E3100F3D0CF /* libxml2.dylib */; };
@@ -77,6 +78,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00FCBC761683641200A353D2 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		00FCBCA11683649C00A353D2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		7662D8B115E4290F00672896 /* StaticMapExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticMapExampleViewController.h; sourceTree = "<group>"; };
 		7662D8B215E4290F00672896 /* StaticMapExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticMapExampleViewController.m; sourceTree = "<group>"; };
 		7662D8B315E4290F00672896 /* StaticMapExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StaticMapExampleViewController.xib; sourceTree = "<group>"; };
@@ -173,13 +176,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00FCBCA21683649C00A353D2 /* AudioToolbox.framework in Frameworks */,
+				00FCBC771683641200A353D2 /* OpenAL.framework in Frameworks */,
 				C9ECC93515738AAE000FF93D /* CoreTelephony.framework in Frameworks */,
 				C96EECE91423958B00F3D0CF /* CoreLocation.framework in Frameworks */,
 				C96EECE714238E6800F3D0CF /* libYandexMapKit.a in Frameworks */,
 				C96EECE514238E3100F3D0CF /* libxml2.dylib in Frameworks */,
 				C96EECE314238E0900F3D0CF /* libsqlite3.dylib in Frameworks */,
 				C96EECE114238E0000F3D0CF /* libz.dylib in Frameworks */,
-				C96EECDF14238DF700F3D0CF /* libstdc++.dylib in Frameworks */,
 				C96EECDD14238DE700F3D0CF /* MessageUI.framework in Frameworks */,
 				C96EECDB14238DDF00F3D0CF /* SystemConfiguration.framework in Frameworks */,
 				C96EECD914238DD700F3D0CF /* QuartzCore.framework in Frameworks */,
@@ -258,6 +262,8 @@
 		C96EECA41423899B00F3D0CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				00FCBCA11683649C00A353D2 /* AudioToolbox.framework */,
+				00FCBC761683641200A353D2 /* OpenAL.framework */,
 				C9ECC93415738AAE000FF93D /* CoreTelephony.framework */,
 				C96EECE81423958B00F3D0CF /* CoreLocation.framework */,
 				C96EECE614238E6800F3D0CF /* libYandexMapKit.a */,
@@ -582,10 +588,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv7,
-					armv6,
-				);
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -597,7 +599,10 @@
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/YandexMapKit/Headers";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lstdc++",
+				);
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -624,10 +629,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv7,
-					armv6,
-				);
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -644,7 +645,11 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/YandexMapKit/Headers";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lstdc++",
+				);
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -653,10 +658,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv7,
-					armv6,
-				);
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -668,7 +669,10 @@
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/YandexMapKit/Headers";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lstdc++",
+				);
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
