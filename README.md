@@ -10,7 +10,7 @@
 ```    
 
 2. [Скачайте](http://m.soft.yandex.ru/download/mapkit/ios-v1/yamapkit-file.zip) архив с библиотекой, распакуйте его и положите содержимое в папку ``YandexMapKit`` в папке с клонированным на предыдущем шаге репозиторием
-3. Подставьте свой API ключ в `-[YMKConfiguration setApiKey:]`
+3. Подставьте свой [API ключ](http://feedback.yandex.ru/?from=mapkit) в `-[YMKConfiguration setApiKey:]`
 4. Всё готово к запуску тестового проекта
 
 Дополнительная информация
