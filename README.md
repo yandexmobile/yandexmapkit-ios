@@ -5,9 +5,9 @@
 
 1. Клонируйте репозиторий примера
 
-```
+    ```
     git clone https://github.com/yandexmobile/yandexmapkit-ios.git
-```
+    ```
 
 2. [Установите](http://docs.cocoapods.org/guides/installing_cocoapods.html) CocoaPods, если вы еще не сделали этого.
 
@@ -15,9 +15,9 @@
 
 4. Установите зависимости:
 
-```
+    ```
     pod install
-```
+    ```
 
 5. Откройте workspace проекта YandexMapKitSample.xcworkspace в Xcode.
 
