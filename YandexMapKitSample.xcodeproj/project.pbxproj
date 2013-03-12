@@ -81,7 +81,7 @@
 		00FCBC761683641200A353D2 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		00FCBCA11683649C00A353D2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		27CD1BCB868E41B6AA51E821 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
-		72BE58BC16EF26EE000ADC42 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		72BE58BC16EF26EE000ADC42 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		7662D8B115E4290F00672896 /* StaticMapExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticMapExampleViewController.h; sourceTree = "<group>"; };
 		7662D8B215E4290F00672896 /* StaticMapExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticMapExampleViewController.m; sourceTree = "<group>"; };
 		7662D8B315E4290F00672896 /* StaticMapExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StaticMapExampleViewController.xib; sourceTree = "<group>"; };
@@ -243,7 +243,6 @@
 		C96EEC961423899A00F3D0CF = {
 			isa = PBXGroup;
 			children = (
-				72BE58BC16EF26EE000ADC42 /* Default-568h@2x.png */,
 				C96EECAB1423899B00F3D0CF /* YandexMapKitSample */,
 				C96EECA41423899B00F3D0CF /* Frameworks */,
 				C96EECA21423899B00F3D0CF /* Products */,
@@ -303,6 +302,7 @@
 			isa = PBXGroup;
 			children = (
 				C940DD2714265B02004DB73E /* Default@2x.png */,
+				72BE58BC16EF26EE000ADC42 /* Default-568h@2x.png */,
 				C940DD2514265AFF004DB73E /* Default.png */,
 				C96EECAD1423899B00F3D0CF /* YandexMapKitSample-Info.plist */,
 				C96EECAE1423899B00F3D0CF /* InfoPlist.strings */,
