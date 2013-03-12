@@ -4,14 +4,26 @@
 ------------
 
 1. Клонируйте репозиторий примера
- 
-```
-    git clone https://github.com/yandexmobile/yandexmapkit-ios.git
-```    
 
-2. [Скачайте](https://github.com/downloads/yandexmobile/yandexmapkit-ios/YandexMapKit.zip) архив с библиотекой, распакуйте его и положите папку ``YandexMapKit`` в папку с клонированным на предыдущем шаге репозиторием
-3. Подставьте свой API ключ в `-[YMKConfiguration setApiKey:]`
-4. Всё готово к запуску тестового проекта
+    ```
+    git clone https://github.com/yandexmobile/yandexmapkit-ios.git
+    ```
+
+2. [Установите](http://docs.cocoapods.org/guides/installing_cocoapods.html) CocoaPods, если вы еще не сделали этого.
+
+3. Перейдите в папку проекта, полученную на шаге 1.
+
+4. Установите зависимости:
+
+    ```
+    pod install
+    ```
+
+5. Откройте workspace проекта YandexMapKitSample.xcworkspace в Xcode.
+
+6. Подставьте свой API ключ в `-[YMKConfiguration setApiKey:]`
+
+7. Соберите и запустите target YandexMapKitSample.
 
 Дополнительная информация
 ---------------------------
