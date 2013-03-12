@@ -9,5 +9,5 @@ docs
 *.tm_build_errors
 *.perspectivev3
 xcuserdata
-project.xcworkspace
-YandexMapKit
+.idea
+Pods
