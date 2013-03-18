@@ -76,6 +76,14 @@
 			<key>ViewControllerClass</key>
 			<string>StaticMapExampleViewController</string>
 		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Двигающиеся аннотации</string>
+			<key>Subtitle</key>
+			<string>Пример работы с аннотациями, которые автоматически передвигаются по карте</string>
+			<key>ViewControllerClass</key>
+			<string>YMKSMovingAnnotationsViewController</string>
+		</dict>
 	</array>
 </dict>
 </plist>
