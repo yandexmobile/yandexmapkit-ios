@@ -35,9 +35,9 @@
 - (id)initWithDictionary:(NSDictionary *)dictionary {
     self = [super init];
     if (self) {
-        self.title = [dictionary objectForKey:@"Title"];
-        self.subtitle = [dictionary objectForKey:@"Subtitle"];
-        self.viewControllerClassName = [dictionary objectForKey:@"ViewControllerClass"];
+        self.title = dictionary[@"Title"];
+        self.subtitle = dictionary[@"Subtitle"];
+        self.viewControllerClassName = dictionary[@"ViewControllerClass"];
     }
     return self;
 }

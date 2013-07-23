@@ -15,6 +15,8 @@
 @interface SettingsViewController ()
 
 @property(nonatomic, weak) IBOutlet UITextField *keyTextField;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem *cancelButton;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem *saveButton;
 
 @end
 
@@ -22,23 +24,46 @@
 @implementation SettingsViewController
 
 
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
+        [self setup];
+    }
+    return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    if ((self = [super initWithCoder:aDecoder])) {
+        [self setup];
+    }
+    return self;
+}
+
+- (void)setup
+{
+    self.title = NSLocalizedString(@"Settings", @"Screen title");
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
     self.keyTextField.text = [Settings sharedSettings].apiKey;
+    self.navigationItem.leftBarButtonItem = self.cancelButton;
+    self.navigationItem.rightBarButtonItem = self.saveButton;
 }
 
 - (void)viewDidUnload
 {
-    [super viewDidUnload];
-
+    self.cancelButton = nil;
+    self.saveButton = nil;
     self.keyTextField = nil;
+    [super viewDidUnload];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-
     [self.keyTextField becomeFirstResponder];
 }
 

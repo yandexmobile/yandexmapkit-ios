@@ -114,7 +114,7 @@
 
 - (void)layerChange:(UISegmentedControl *)sender {
     NSInteger index = sender.selectedSegmentIndex;
-    YMKMapLayerInfo *layerInfo = [self.layers objectAtIndex:index];
+    YMKMapLayerInfo *layerInfo = self.layers[index];
     self.mapView.visibleLayerIdentifier = layerInfo.identifier;
 }
 
