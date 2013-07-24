@@ -3,8 +3,8 @@
  *
  * This file is a part of the Yandex Map Kit.
  *
- * Version for iOS © 2011-2012 YANDEX
- * 
+ * Version for iOS © 2011-2013 YANDEX
+ *
  * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at http://legal.yandex.ru/mapkit/
  */
@@ -35,9 +35,9 @@
 - (id)initWithDictionary:(NSDictionary *)dictionary {
     self = [super init];
     if (self) {
-        self.title = [dictionary objectForKey:@"Title"];
-        self.subtitle = [dictionary objectForKey:@"Subtitle"];
-        self.viewControllerClassName = [dictionary objectForKey:@"ViewControllerClass"];
+        self.title = dictionary[@"Title"];
+        self.subtitle = dictionary[@"Subtitle"];
+        self.viewControllerClassName = dictionary[@"ViewControllerClass"];
     }
     return self;
 }

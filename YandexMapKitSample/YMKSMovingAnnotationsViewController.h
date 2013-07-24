@@ -1,5 +1,5 @@
 /*
- * CustomCalloutViewController.h
+ * YMKSMovingAnnotationsViewController.h
  *
  * This file is a part of the Yandex Map Kit.
  *
@@ -9,9 +9,8 @@
  * You may obtain a copy of the License at http://legal.yandex.ru/mapkit/
  */
 
-#import <UIKit/UIKit.h>
 #import "MapViewController.h"
 
-@interface CustomCalloutViewController : MapViewController
+@interface YMKSMovingAnnotationsViewController : MapViewController
 
 @end

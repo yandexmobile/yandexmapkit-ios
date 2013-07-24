@@ -11,6 +11,9 @@
 		00FCBCA21683649C00A353D2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00FCBCA11683649C00A353D2 /* AudioToolbox.framework */; };
 		4699E1617D104C2BAA2F0D4D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C41CFFBA6954A8192BC0B91 /* libPods.a */; };
 		72BE58BD16EF26EE000ADC42 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 72BE58BC16EF26EE000ADC42 /* Default-568h@2x.png */; };
+		72D763BC16EF6AC1003C951F /* YMKSMovingAnnotationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D763BB16EF6AC1003C951F /* YMKSMovingAnnotationsViewController.m */; };
+		72D763C416EF6CA2003C951F /* target.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D763C216EF6CA2003C951F /* target.png */; };
+		72D763C516EF6CA2003C951F /* target@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D763C316EF6CA2003C951F /* target@2x.png */; };
 		7662D8B415E4291700672896 /* StaticMapExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7662D8B215E4290F00672896 /* StaticMapExampleViewController.m */; };
 		7662D8B515E4291A00672896 /* StaticMapExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7662D8B315E4290F00672896 /* StaticMapExampleViewController.xib */; };
 		76FC1C741591024E00A757A3 /* VisibleRectExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76FC1C721591024E00A757A3 /* VisibleRectExampleViewController.m */; };
@@ -25,7 +28,7 @@
 		C96EECA81423899B00F3D0CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECA71423899B00F3D0CF /* Foundation.framework */; };
 		C96EECAA1423899B00F3D0CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECA91423899B00F3D0CF /* CoreGraphics.framework */; };
 		C96EECB01423899B00F3D0CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C96EECAE1423899B00F3D0CF /* InfoPlist.strings */; };
-		C96EECB21423899B00F3D0CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C96EECB11423899B00F3D0CF /* main.m */; };
+		C96EECB21423899B00F3D0CF /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = C96EECB11423899B00F3D0CF /* main.mm */; };
 		C96EECB61423899B00F3D0CF /* YandexMapKitSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C96EECB51423899B00F3D0CF /* YandexMapKitSampleAppDelegate.m */; };
 		C96EECB91423899B00F3D0CF /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C96EECB71423899B00F3D0CF /* MainWindow.xib */; };
 		C96EECD114238DB300F3D0CF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECD014238DB300F3D0CF /* OpenGLES.framework */; };
@@ -82,6 +85,10 @@
 		00FCBCA11683649C00A353D2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		27CD1BCB868E41B6AA51E821 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		72BE58BC16EF26EE000ADC42 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		72D763BA16EF6AC1003C951F /* YMKSMovingAnnotationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMKSMovingAnnotationsViewController.h; sourceTree = "<group>"; };
+		72D763BB16EF6AC1003C951F /* YMKSMovingAnnotationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMKSMovingAnnotationsViewController.m; sourceTree = "<group>"; };
+		72D763C216EF6CA2003C951F /* target.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = target.png; sourceTree = "<group>"; };
+		72D763C316EF6CA2003C951F /* target@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "target@2x.png"; sourceTree = "<group>"; };
 		7662D8B115E4290F00672896 /* StaticMapExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticMapExampleViewController.h; sourceTree = "<group>"; };
 		7662D8B215E4290F00672896 /* StaticMapExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticMapExampleViewController.m; sourceTree = "<group>"; };
 		7662D8B315E4290F00672896 /* StaticMapExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StaticMapExampleViewController.xib; sourceTree = "<group>"; };
@@ -104,7 +111,7 @@
 		C96EECA91423899B00F3D0CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C96EECAD1423899B00F3D0CF /* YandexMapKitSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YandexMapKitSample-Info.plist"; sourceTree = "<group>"; };
 		C96EECAF1423899B00F3D0CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C96EECB11423899B00F3D0CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C96EECB11423899B00F3D0CF /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		C96EECB31423899B00F3D0CF /* YandexMapKitSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YandexMapKitSample-Prefix.pch"; sourceTree = "<group>"; };
 		C96EECB41423899B00F3D0CF /* YandexMapKitSampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YandexMapKitSampleAppDelegate.h; sourceTree = "<group>"; };
 		C96EECB51423899B00F3D0CF /* YandexMapKitSampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YandexMapKitSampleAppDelegate.m; sourceTree = "<group>"; };
@@ -199,6 +206,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		72D763B916EF6A45003C951F /* Moving Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				72D763C216EF6CA2003C951F /* target.png */,
+				72D763C316EF6CA2003C951F /* target@2x.png */,
+				72D763BA16EF6AC1003C951F /* YMKSMovingAnnotationsViewController.h */,
+				72D763BB16EF6AC1003C951F /* YMKSMovingAnnotationsViewController.m */,
+			);
+			name = "Moving Annotations";
+			sourceTree = "<group>";
+		};
 		7662D8B015E428EC00672896 /* StaticMapExampleViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,7 +324,7 @@
 				C940DD2514265AFF004DB73E /* Default.png */,
 				C96EECAD1423899B00F3D0CF /* YandexMapKitSample-Info.plist */,
 				C96EECAE1423899B00F3D0CF /* InfoPlist.strings */,
-				C96EECB11423899B00F3D0CF /* main.m */,
+				C96EECB11423899B00F3D0CF /* main.mm */,
 				C96EECB31423899B00F3D0CF /* YandexMapKitSample-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -382,6 +400,7 @@
 				C994B9F71496ABD600980A9E /* On-Screen Buttons View Controller */,
 				76FC1C70159101B100A757A3 /* mapViewVisibleRect */,
 				7662D8B015E428EC00672896 /* StaticMapExampleViewController */,
+				72D763B916EF6A45003C951F /* Moving Annotations */,
 			);
 			name = "Yandex MapKit Samples";
 			sourceTree = "<group>";
@@ -474,6 +493,7 @@
 		C96EEC981423899B00F3D0CF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "–Ø–Ω–¥–µ–∫—Å";
 			};
 			buildConfigurationList = C96EEC9B1423899B00F3D0CF /* Build configuration list for PBXProject "YandexMapKitSample" */;
@@ -529,6 +549,8 @@
 				76FC1D5A15923E4B00A757A3 /* SettingsViewController.xib in Resources */,
 				7662D8B515E4291A00672896 /* StaticMapExampleViewController.xib in Resources */,
 				72BE58BD16EF26EE000ADC42 /* Default-568h@2x.png in Resources */,
+				72D763C416EF6CA2003C951F /* target.png in Resources */,
+				72D763C516EF6CA2003C951F /* target@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,7 +578,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C96EECB21423899B00F3D0CF /* main.m in Sources */,
+				C96EECB21423899B00F3D0CF /* main.mm in Sources */,
 				C96EECB61423899B00F3D0CF /* YandexMapKitSampleAppDelegate.m in Sources */,
 				C99C78621426193F00380582 /* MapViewController.m in Sources */,
 				C9D7219F14261C1B00711704 /* RootViewController.m in Sources */,
@@ -575,6 +597,7 @@
 				76FC1D5915923E4B00A757A3 /* SettingsViewController.m in Sources */,
 				76FC1D5D1592437300A757A3 /* Settings.m in Sources */,
 				7662D8B415E4291700672896 /* StaticMapExampleViewController.m in Sources */,
+				72D763BC16EF6AC1003C951F /* YMKSMovingAnnotationsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,9 +629,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = "";
-				GCC_VERSION = "";
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -641,20 +662,17 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = "";
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/YandexMapKit/Headers";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "-all_load";
 				SDKROOT = iphoneos;
@@ -667,9 +685,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = "";
-				GCC_VERSION = "";
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
