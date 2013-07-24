@@ -28,7 +28,7 @@
 		C96EECA81423899B00F3D0CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECA71423899B00F3D0CF /* Foundation.framework */; };
 		C96EECAA1423899B00F3D0CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECA91423899B00F3D0CF /* CoreGraphics.framework */; };
 		C96EECB01423899B00F3D0CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C96EECAE1423899B00F3D0CF /* InfoPlist.strings */; };
-		C96EECB21423899B00F3D0CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C96EECB11423899B00F3D0CF /* main.m */; };
+		C96EECB21423899B00F3D0CF /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = C96EECB11423899B00F3D0CF /* main.mm */; };
 		C96EECB61423899B00F3D0CF /* YandexMapKitSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C96EECB51423899B00F3D0CF /* YandexMapKitSampleAppDelegate.m */; };
 		C96EECB91423899B00F3D0CF /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C96EECB71423899B00F3D0CF /* MainWindow.xib */; };
 		C96EECD114238DB300F3D0CF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96EECD014238DB300F3D0CF /* OpenGLES.framework */; };
@@ -111,7 +111,7 @@
 		C96EECA91423899B00F3D0CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C96EECAD1423899B00F3D0CF /* YandexMapKitSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YandexMapKitSample-Info.plist"; sourceTree = "<group>"; };
 		C96EECAF1423899B00F3D0CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C96EECB11423899B00F3D0CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C96EECB11423899B00F3D0CF /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		C96EECB31423899B00F3D0CF /* YandexMapKitSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YandexMapKitSample-Prefix.pch"; sourceTree = "<group>"; };
 		C96EECB41423899B00F3D0CF /* YandexMapKitSampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YandexMapKitSampleAppDelegate.h; sourceTree = "<group>"; };
 		C96EECB51423899B00F3D0CF /* YandexMapKitSampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YandexMapKitSampleAppDelegate.m; sourceTree = "<group>"; };
@@ -324,7 +324,7 @@
 				C940DD2514265AFF004DB73E /* Default.png */,
 				C96EECAD1423899B00F3D0CF /* YandexMapKitSample-Info.plist */,
 				C96EECAE1423899B00F3D0CF /* InfoPlist.strings */,
-				C96EECB11423899B00F3D0CF /* main.m */,
+				C96EECB11423899B00F3D0CF /* main.mm */,
 				C96EECB31423899B00F3D0CF /* YandexMapKitSample-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -493,6 +493,7 @@
 		C96EEC981423899B00F3D0CF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "–Ø–Ω–¥–µ–∫—Å";
 			};
 			buildConfigurationList = C96EEC9B1423899B00F3D0CF /* Build configuration list for PBXProject "YandexMapKitSample" */;
@@ -577,7 +578,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C96EECB21423899B00F3D0CF /* main.m in Sources */,
+				C96EECB21423899B00F3D0CF /* main.mm in Sources */,
 				C96EECB61423899B00F3D0CF /* YandexMapKitSampleAppDelegate.m in Sources */,
 				C99C78621426193F00380582 /* MapViewController.m in Sources */,
 				C9D7219F14261C1B00711704 /* RootViewController.m in Sources */,
@@ -628,9 +629,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = "";
-				GCC_VERSION = "";
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -663,20 +662,17 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = "";
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/YandexMapKit/Headers";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "-all_load";
 				SDKROOT = iphoneos;
@@ -689,9 +685,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = "";
-				GCC_VERSION = "";
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;

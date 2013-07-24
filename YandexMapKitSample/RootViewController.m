@@ -3,8 +3,8 @@
  *
  * This file is a part of the Yandex Map Kit.
  *
- * Version for iOS © 2011-2012 YANDEX
- * 
+ * Version for iOS © 2011-2013 YANDEX
+ *
  * You may not use this file except in compliance with the License.
  * You may obtain a copy of the License at http://legal.yandex.ru/mapkit/
  */
@@ -32,8 +32,8 @@
 
 - (IBAction)settingsButtonTapped:(id)sender {
     SettingsViewController *vc = [[SettingsViewController alloc] init];
-    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-    [self presentModalViewController:vc animated:YES];
+    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:vc];
+    [self presentModalViewController:nc animated:YES];
 }
 
 #pragma mark - View lifecycle
@@ -100,7 +100,7 @@
     NSString * samplesDictionaryPath = [[NSBundle mainBundle] pathForResource:@"SamplesList" ofType:@"plist"];
     NSDictionary * samplesDictionary = [[NSDictionary alloc] initWithContentsOfFile:samplesDictionaryPath];
     
-    for (NSDictionary * sampleDictionary in [samplesDictionary objectForKey:@"Samples"]) {
+    for (NSDictionary * sampleDictionary in samplesDictionary[@"Samples"]) {
         Sample * sample = [Sample sampleWithDictionary:sampleDictionary];
         [tempArray addObject:sample];
     }
@@ -110,7 +110,7 @@
 }
 
 - (Sample *)sampleAtIndexPath:(NSIndexPath *)indexPath {
-    return [self.samples objectAtIndex:indexPath.row];
+    return (self.samples)[indexPath.row];
 }
 
 @end
