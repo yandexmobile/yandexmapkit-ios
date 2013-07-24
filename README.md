@@ -32,8 +32,12 @@
 
 Если вы хотите сообщить об ошибке или предложить идею в развитии, то напишите об этом, пожалуйста, в [Issues](https://github.com/yandexmobile/yandexmapkit-ios/issues).
 
+Изменения в версии 1.0.5
+-----------------------------------------------
 
-Изменения в версии Yandex Map Kit для iOS 1.0.4
+Подробный список изменений можно найти в wiki [тут](https://github.com/yandexmobile/yandexmapkit-ios/wiki/Изменения-в-версии-Yandex-Map-Kit-для-iOS-1.0.5).
+
+Изменения в версии 1.0.4
 -----------------------------------------------
 
 Подробный список изменений можно найти в wiki [тут](https://github.com/yandexmobile/yandexmapkit-ios/wiki/Изменения-в-версии-Yandex-Map-Kit-для-iOS-1.0.4).
