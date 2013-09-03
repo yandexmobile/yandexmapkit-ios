@@ -39,9 +39,18 @@
     [self startMonitoringLocationFetching];
 }
 
-- (void)configureAndInstallMapView
+- (void)viewWillAppear:(BOOL)animated
 {
     self.mapView.showsUserLocation = YES;
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    self.mapView.showsUserLocation = NO;
+}
+
+- (void)configureAndInstallMapView
+{
 }
 
 #pragma mark - IBActions
