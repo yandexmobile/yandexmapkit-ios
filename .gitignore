@@ -9,6 +9,15 @@ docs
 *.tm_build_errors
 *.perspectivev3
 xcuserdata
+project.xcworkspace
+Resources/data-geo
+Gemfile.lock
 .idea
+Resources/Suggest/output
+Resources/data-categories
+Resources/data-geo
+Frank/frankified_build
+Frank/lib/xcode_environment.yml
 Pods
+YandexMaps.xcworkspace/xcshareddata/
 Podfile.lock
