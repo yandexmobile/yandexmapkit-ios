@@ -15,7 +15,7 @@
 static NSString *const kYandexMapKitApiKey = @"YandexMapKitApiKey";
 
 #warning Replace with your own Yandex Map Kit API key
-static NSString *const kDefaultAPIKey = @"Y4qaClJeLlele~jV5ooJCwV-kPw9En6G4ieZsoCQkDpgG9rNguDaiSH4YrpCIfTwJDYb0ViADV15G1vIsBxb4SRdN-xvOLlB-P9iJZgCUOQ=";;
+static NSString *const kDefaultAPIKey = nil;
 
 
 @implementation Settings

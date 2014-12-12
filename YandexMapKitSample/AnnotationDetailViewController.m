@@ -38,6 +38,10 @@
     [super viewDidUnload];
 }
 
+- (UIRectEdge)edgesForExtendedLayout {
+    return UIRectEdgeNone;
+}
+
 #pragma mark - Helpers
 
 - (void)configureAnnotationDetail {

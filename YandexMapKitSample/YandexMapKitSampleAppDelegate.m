@@ -25,7 +25,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [YMKConfiguration sharedInstance].apiKey = [Settings sharedSettings].apiKey;
-    [YMKConfiguration sharedInstance].useNewBundle = YES;
     
     self.window.rootViewController = self.navigationController;
     
