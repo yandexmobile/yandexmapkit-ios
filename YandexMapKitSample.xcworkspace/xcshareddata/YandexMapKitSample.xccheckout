@@ -2,35 +2,37 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>885E977A-BFD2-488E-A074-75A70A14BB02</string>
+	<string>4D25AFA8-576F-4915-B1CD-600329E9A3F2</string>
 	<key>IDESourceControlProjectName</key>
 	<string>YandexMapKitSample</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>E66839EE-7A2F-4B5E-AF90-22680F6C400D</key>
-		<string>ssh://github.com/yandexmobile/yandexmapkit-ios.git</string>
+		<key>5311E78A5807F03A8B0E75EF4362449966CA5B4F</key>
+		<string>https://github.com/yandexmobile/yandexmapkit-ios.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>YandexMapKitSample.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>E66839EE-7A2F-4B5E-AF90-22680F6C400D</key>
+		<key>5311E78A5807F03A8B0E75EF4362449966CA5B4F</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/yandexmobile/yandexmapkit-ios.git</string>
+	<string>https://github.com/yandexmobile/yandexmapkit-ios.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>E66839EE-7A2F-4B5E-AF90-22680F6C400D</string>
+	<string>5311E78A5807F03A8B0E75EF4362449966CA5B4F</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>E66839EE-7A2F-4B5E-AF90-22680F6C400D</string>
+			<string>5311E78A5807F03A8B0E75EF4362449966CA5B4F</string>
 			<key>IDESourceControlWCCName</key>
 			<string>yandexmapkit-ios</string>
 		</dict>

@@ -25,7 +25,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [YMKConfiguration sharedInstance].apiKey = [Settings sharedSettings].apiKey;
-
+    
     self.window.rootViewController = self.navigationController;
     
     [self.window makeKeyAndVisible];
