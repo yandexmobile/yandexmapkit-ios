@@ -37,24 +37,20 @@
 Изменения
 -----------------------------------------------
 
-1.0.7
----------
+**1.0.7**
 * Поддержка arm64 [#148](https://github.com/yandexmobile/yandexmapkit-ios/issues/148), [#159](https://github.com/yandexmobile/yandexmapkit-ios/issues/159)
 * YMMapView не препятствует воспроизведению музыки в фоне [#153](https://github.com/yandexmobile/yandexmapkit-ios/issues/153)
 * Новые иконки. Для использования старых установите
 `[YMKConfiguration sharedInstance].useNewBundle = NO;`
 
-1.0.6
----------
+**1.0.6**
 
 [Список изменений](https://github.com/yandexmobile/yandexmapkit-ios/wiki/Изменения-в-версии-Yandex-Map-Kit-для-iOS-1.0.6).
 
-1.0.5
----------
+**1.0.5**
 
 [Список изменений](https://github.com/yandexmobile/yandexmapkit-ios/wiki/Изменения-в-версии-Yandex-Map-Kit-для-iOS-1.0.5).
 
-1.0.4
----------
+**1.0.4**
 
 [Список изменений](https://github.com/yandexmobile/yandexmapkit-ios/wiki/Изменения-в-версии-Yandex-Map-Kit-для-iOS-1.0.4).
