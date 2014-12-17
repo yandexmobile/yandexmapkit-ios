@@ -1,4 +1,4 @@
-Поддержка этой версии Yandex Map Kit прекращена. Он по-прежнему работает, но исправляться будут только критические ошибки. В декабре мы выложим новую версию с поддержкой arm64.
+Поддержка этой версии Yandex Map Kit прекращена. Он по-прежнему работает, но исправляться будут только критические ошибки.
 
 В этом репозитории находится тестовое приложение, демонстрирующее возможности Yandex Map Kit.
 
@@ -39,9 +39,10 @@
 
 **1.0.7**
 * Поддержка arm64 [#148](https://github.com/yandexmobile/yandexmapkit-ios/issues/148), [#159](https://github.com/yandexmobile/yandexmapkit-ios/issues/159)
-* YMMapView не препятствует воспроизведению музыки в фоне [#153](https://github.com/yandexmobile/yandexmapkit-ios/issues/153)
+* YMKMapView не препятствует воспроизведению музыки в фоне [#153](https://github.com/yandexmobile/yandexmapkit-ios/issues/153)
 * Новые иконки. Для использования старых установите
 `[YMKConfiguration sharedInstance].useNewBundle = NO;`
+* Обновлён тестовый проект
 
 **1.0.6**
 
