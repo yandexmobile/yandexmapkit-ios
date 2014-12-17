@@ -37,14 +37,14 @@
 Изменения в версии 1.0.6
 -----------------------------------------------
 
-Подробный список изменений можно найти в wiki [тут](https://github.com/yandexmobile/yandexmapkit-ios/wiki/Изменения-в-версии-Yandex-Map-Kit-для-iOS-1.0.6).
+[Список изменений](https://github.com/yandexmobile/yandexmapkit-ios/wiki/Изменения-в-версии-Yandex-Map-Kit-для-iOS-1.0.6).
 
 Изменения в версии 1.0.5
 -----------------------------------------------
 
-Подробный список изменений можно найти в wiki [тут](https://github.com/yandexmobile/yandexmapkit-ios/wiki/Изменения-в-версии-Yandex-Map-Kit-для-iOS-1.0.5).
+[Список изменений](https://github.com/yandexmobile/yandexmapkit-ios/wiki/Изменения-в-версии-Yandex-Map-Kit-для-iOS-1.0.5).
 
 Изменения в версии 1.0.4
 -----------------------------------------------
 
-Подробный список изменений можно найти в wiki [тут](https://github.com/yandexmobile/yandexmapkit-ios/wiki/Изменения-в-версии-Yandex-Map-Kit-для-iOS-1.0.4).
+[Список изменений](https://github.com/yandexmobile/yandexmapkit-ios/wiki/Изменения-в-версии-Yandex-Map-Kit-для-iOS-1.0.4).
