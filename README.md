@@ -37,8 +37,11 @@
 Изменения в версии 1.0.7
 -----------------------------------------------
 — Поддержка arm64 [#148](https://github.com/yandexmobile/yandexmapkit-ios/issues/148), [#159](https://github.com/yandexmobile/yandexmapkit-ios/issues/159)
+
 — YMMapView не препятствует воспроизведению музыки в фоне [#153](https://github.com/yandexmobile/yandexmapkit-ios/issues/153)
+
 – Исправлена 
+
 — Новые иконки. Для использования старых установите
 `[YMKConfiguration sharedInstance].useNewBundle = NO;`
 
