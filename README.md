@@ -37,6 +37,10 @@
 Изменения
 -----------------------------------------------
 
+**1.0.8**
+
+* Исправлены `YMKMapRegionMake` и `[YMKMapView setRegion:]` [#174](https://github.com/yandexmobile/yandexmapkit-ios/issues/174),  [#171](https://github.com/yandexmobile/yandexmapkit-ios/issues/171)
+
 **1.0.7**
 * Поддержка arm64 [#148](https://github.com/yandexmobile/yandexmapkit-ios/issues/148), [#159](https://github.com/yandexmobile/yandexmapkit-ios/issues/159)
 * YMKMapView больше не препятствует воспроизведению музыки в фоне [#153](https://github.com/yandexmobile/yandexmapkit-ios/issues/153)
