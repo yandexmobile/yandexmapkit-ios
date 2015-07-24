@@ -37,6 +37,10 @@
 Изменения
 -----------------------------------------------
 
+**1.0.9**
+
+* Исправлена ошибка подключения через cocoapods
+
 **1.0.8**
 
 * Исправлены `YMKMapRegionMake` и `[YMKMapView setRegion:]` [#174](https://github.com/yandexmobile/yandexmapkit-ios/issues/174),  [#171](https://github.com/yandexmobile/yandexmapkit-ios/issues/171)
