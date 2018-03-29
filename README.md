@@ -1,3 +1,11 @@
+**Эта версия больше не поддерживается, актуальную инфрмацию о новых версиях MapKit можно найти по ссылкам:**
+
+[Документация](https://tech.yandex.ru/maps/mapkit/)
+
+[Cocoa Pods](https://cocoapods.org/pods/YandexMapKit)
+
+[Примеры использования](https://github.com/yandex/mapkit-ios-demo)
+
 В этом репозитории находится тестовое приложение, демонстрирующее возможности Yandex Map Kit.
 
 Как начать работу с тестовым проектом
